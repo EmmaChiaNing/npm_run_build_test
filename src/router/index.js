@@ -15,6 +15,4 @@ const router = createRouter({
   ]
 })
 
-console.log('router', router)
-
 export default router

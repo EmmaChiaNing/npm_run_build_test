@@ -5,8 +5,6 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <header>
-    <!-- <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" /> -->
-
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
       <!-- <h1>測試看看打包</h1> -->
@@ -14,6 +12,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/teleport">Teleport</RouterLink>
+        <RouterLink to="/watch">Watch</RouterLink>
       </nav>
     </div>
   </header>
