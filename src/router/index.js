@@ -1,29 +1,20 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import TeleportComp from '../views/TeleportComp.vue'
+
+const metaRouters = import.meta.glob("./modules/*.js");
+
+const routerArray = []
+for (const key in metaRouters) {
+  const mod = await metaRouters[key]()
+  routerArray.push(...mod.default)   
+}
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: HomeView
-    },
-    {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue')
-    },
-    {
-      path: '/teleport',
-      name: 'teleport',
-      component: TeleportComp
-    }
+    ...routerArray
   ]
 })
+
+console.log('router', router)
 
 export default router
