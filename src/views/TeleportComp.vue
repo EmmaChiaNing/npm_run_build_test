@@ -1,16 +1,3 @@
-<template>
-    <div class="teleport">
-        <button @click="openConfirmModal">Open Confirm Modal</button>
-        <button @click="openOverviewModal">Open Overview Modal</button>
-        <Teleport to="#modal">
-            <Transition>
-                <component :is="modal.component.value" v-if="modal.show.value" @close="modal.closeModal"/>
-            </Transition>
-        </Teleport>
-        <div class="absolute uglyDom">This will make ui ugly</div>
-    </div>
-</template>
-
 <script setup>
 import { markRaw } from 'vue'
 import ModalConfirm from '@/components/modal/ModalConfirm.vue';
@@ -28,6 +15,19 @@ const openOverviewModal = () => {
     modal.showModal()
 }
 </script>
+
+<template>
+    <div class="teleport">
+        <button @click="openConfirmModal">Open Confirm Modal</button>
+        <button @click="openOverviewModal">Open Overview Modal</button>
+        <Teleport to="#modal">
+            <Transition>
+                <component :is="modal.component.value" v-if="modal.show.value" @close="modal.closeModal"/>
+            </Transition>
+        </Teleport>
+        <div class="absolute uglyDom">This will make ui ugly</div>
+    </div>
+</template>
 
 <style lang="css" scoped>
 .uglyDom {
