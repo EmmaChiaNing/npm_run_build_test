@@ -10,10 +10,10 @@ import HelloWorld from './components/HelloWorld.vue'
       <!-- <h1>測試看看打包</h1> -->
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/teleport">Teleport</RouterLink>
         <RouterLink to="/watch">Watch</RouterLink>
         <RouterLink to="/lazyLoadComponent">lazyLoadComponent</RouterLink>
+        <RouterLink to="/keepAlive">KeepAlive</RouterLink>
       </nav>
     </div>
   </header>
