@@ -32,5 +32,7 @@ const openOverviewModal = () => {
 <style lang="css" scoped>
 .uglyDom {
     background: red;
+    top: 50%;
+    left: 50%;
 }
 </style>

@@ -41,7 +41,9 @@ watch([copyValues, subscriber], ([copyValues, subscriber]) => {
     padding-bottom: 5px;
 }
 .watch ul {
-    list-style: none
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 .watch ul li {
     padding-bottom: 30px;
