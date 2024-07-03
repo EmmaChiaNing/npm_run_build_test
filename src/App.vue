@@ -11,6 +11,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/lazyLoadComponent">lazyLoadComponent</RouterLink>
         <RouterLink to="/keepAlive">KeepAlive</RouterLink>
         <RouterLink to="/swiper">Swiper</RouterLink>
+        <RouterLink to="/gridAndFlex">GridAndFlex</RouterLink>
       </nav>
     </div>
   </header>
@@ -22,6 +23,7 @@ import { RouterLink, RouterView } from 'vue-router'
 header {
   line-height: 1.5;
   max-height: 100vh;
+  width: 100%;
 }
 
 nav {
@@ -29,6 +31,8 @@ nav {
   font-size: 12px;
   text-align: center;
   margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 nav a.router-link-exact-active {
@@ -50,12 +54,6 @@ nav a:first-of-type {
 }
 
 @media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
   header .wrapper {
     display: flex;
     place-items: flex-start;
@@ -71,4 +69,10 @@ nav a:first-of-type {
     margin-top: 1rem;
   }
 }
+/* @media (max-width: 750px) {
+  nav {
+    display: flex;
+    
+  }
+} */
 </style>
