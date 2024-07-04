@@ -17,15 +17,20 @@
 <script setup>
 import { shallowRef } from 'vue';
 import DefineModel from '@/components/vueComp/defineModel/DefineModel.vue';
+import DefineExpose from '@/components/vueComp/defineExpose/DefineExpose.vue';
 
 const menuList = [
     {
         title: 'DefineModel',
         component: DefineModel
     },
+    {
+        title: 'DefineExpose',
+        component: DefineExpose
+    },
 ];
 
-const currentComp = shallowRef(DefineModel);
+const currentComp = shallowRef(DefineExpose);
 
 const changeComp = (comp) => {
     currentComp.value = comp
