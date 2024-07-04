@@ -8,16 +8,17 @@
 }
 
 a,
-.green {
+.accent {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
+  color: #b0b0b0;
   padding: 3px;
 }
 
 @media (hover: hover) {
   a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+    text-decoration: none;
+    background-color: #121d2f;
+    outline: solid 2px #4493f8;
   }
 }
 
@@ -35,14 +36,4 @@ a,
   background: #0000007b;
   width: 100vw;
   height: 100vh;
-}
-
-.v-enter-active,
-.v-leave-active {
-  transition: opacity 0.5s ease;
-}
-
-.v-enter-from,
-.v-leave-to {
-  opacity: 0;
 }

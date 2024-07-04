@@ -1,5 +1,5 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink, RouterView } from 'vue-router';
 </script>
 
 <template>
@@ -13,6 +13,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/keepAlive">KeepAlive</RouterLink>
         <RouterLink to="/swiper">Swiper</RouterLink>
         <RouterLink to="/gridAndFlex">GridAndFlex</RouterLink>
+        <RouterLink to="/vue">Vue</RouterLink>
       </nav>
     </div>
   </header>
@@ -37,7 +38,9 @@ nav {
 }
 
 nav a.router-link-exact-active {
-  color: var(--color-text);
+  color: #4493f8;
+  background: #121d2f;
+  outline: solid 2px #4493f8;
 }
 
 nav a.router-link-exact-active:hover {

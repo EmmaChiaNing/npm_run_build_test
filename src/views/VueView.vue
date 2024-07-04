@@ -16,20 +16,17 @@
 
 <script setup>
 import { shallowRef } from 'vue';
-import Grid from '@/components/gridAndFlex/Grid.vue';
-import Flex from '@/components/gridAndFlex/Flex.vue';
+import DefineModel from '@/components/vueComp/defineModel/DefineModel.vue';
 
 const menuList = [
     {
-        title: 'Grid',
-        component: Grid
+        title: 'DefineModel',
+        component: DefineModel
     },
-    {
-        title: 'Flex',
-        component: Flex
-    },
-]
-const currentComp = shallowRef(Grid);
+];
+
+const currentComp = shallowRef(DefineModel);
+
 const changeComp = (comp) => {
     currentComp.value = comp
 }
