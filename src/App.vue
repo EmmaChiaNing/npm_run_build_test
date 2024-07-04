@@ -6,6 +6,7 @@ import { RouterLink, RouterView } from 'vue-router'
   <header>
     <div class="wrapper">
       <nav>
+        <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/teleport">Teleport</RouterLink>
         <RouterLink to="/watch">Watch</RouterLink>
         <RouterLink to="/lazyLoadComponent">lazyLoadComponent</RouterLink>
