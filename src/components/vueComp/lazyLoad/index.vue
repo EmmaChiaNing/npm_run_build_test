@@ -1,8 +1,10 @@
 <script setup>
-import { ref,defineAsyncComponent} from 'vue';
-import DynamicModel from '../components/lazyLoadComponents/DynamicModel.vue'
-import ErrorComponent from '../components/lazyLoadComponents/Error.vue';
-import LoadingComponent from '../components/lazyLoadComponents/Loading.vue';
+import { ref, defineAsyncComponent} from 'vue';
+import DynamicModel from './DynamicModel.vue'
+import ErrorComponent from './Error.vue';
+import LoadingComponent from './Loading.vue';
+
+const show = ref(false)
 
 const Dynamic = defineAsyncComponent({
   loader: () =>
@@ -17,15 +19,14 @@ const Dynamic = defineAsyncComponent({
   timeout: 10000
 });
 
-const show = ref(false)
+defineOptions({name: 'LazyLoad'})
+
 </script>
 
 <template>
     <div class="lazy-load-components">
         <button @click="show = !show">點我打開視窗</button>
-        <div style="padding: 20px;">
-            <Dynamic v-if="show" />
-        </div>
+        <Dynamic v-if="show" />
     </div>
 </template>
 

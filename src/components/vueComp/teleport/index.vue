@@ -14,6 +14,8 @@ const openOverviewModal = () => {
     modal.component.value = markRaw(ModalOverview)
     modal.showModal()
 }
+
+defineOptions({name: 'Teleport'})
 </script>
 
 <template>

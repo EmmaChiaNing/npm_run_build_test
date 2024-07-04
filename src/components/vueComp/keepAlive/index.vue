@@ -1,9 +1,9 @@
         
 <script setup>
 import { ref, KeepAlive } from 'vue';
-import Step1 from '@/components/keepAlive/Step1.vue'
-import Step2 from '@/components/keepAlive/Step2.vue'
-import Step3 from '@/components/keepAlive/Step3.vue'
+import Step1 from './Step1.vue'
+import Step2 from './Step2.vue'
+import Step3 from './Step3.vue'
 
 const currentStep = ref(1);
 const menuList = [
@@ -31,6 +31,7 @@ const formData = ref({
     jobTenure: 0
 })
 
+defineOptions({name: 'KeepAlive'})
 </script>
 <template>
     <div class="keep-alive">
