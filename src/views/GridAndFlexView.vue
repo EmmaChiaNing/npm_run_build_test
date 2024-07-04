@@ -29,12 +29,8 @@ const menuList = ref([
         component: Flex
     },
 ])
-const currentComp = ref(Flex);
+const currentComp = ref(Grid);
 const changeComp = (comp) => {
     currentComp.value = comp
 }
 </script>
-
-<style lang="css" scoped>
-
-</style>
