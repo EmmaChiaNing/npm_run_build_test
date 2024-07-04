@@ -4,8 +4,8 @@ import { ref } from 'vue';
 const props = defineProps(["modelValue"])
 const emits = defineEmits(["update:modelValue"])
 
-const handleChange = () => {
-    emits('update:modelValue', '子元件改變值')
+const handleChange = (newVal) => {
+    emits('update:modelValue', newVal = "子元件改變值")
 }
 </script>
 

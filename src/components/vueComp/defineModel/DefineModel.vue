@@ -11,6 +11,9 @@ defineOptions({
 
 <template>
     <article>
+        <p>簡化元件間資料操作</p>
+    </article>
+    <article>
         <header>
             <h3><b class="accent">參數</b></h3>
         </header>

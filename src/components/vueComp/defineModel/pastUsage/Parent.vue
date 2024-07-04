@@ -2,9 +2,12 @@
 import { ref } from 'vue'
 import Child from './Child.vue'
 
-const value = ref('hello world')
+const value = ref('hello world');
+const getNewValue = (newVal) => {
+    alert(newVal);
+}
 </script>
 
 <template>
-    <Child :model-value="value" @update:model-value="newValue => value = newValue"/>
+    <Child v-model="value" @update:modelValue="getNewValue"/>
 </template>
