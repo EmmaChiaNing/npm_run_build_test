@@ -15,7 +15,7 @@ const sendTargetPicker = async () => {
         },
       ]);
       if (picker) {
-        // succeeded in sending a message through TargetPicker
+        // 發送成功
         console.log(`[${picker.status}] Message sent!`);
       } else {
         const [majorVer, minorVer] = (liff.getLineVersion() || "").split(".");
@@ -26,7 +26,7 @@ const sendTargetPicker = async () => {
         } else console.log("TargetPicker was closed!");
       }
     } catch (error) {
-      // something went wrong before sending a message
+      // 錯誤處理
       console.log(error);
       console.log("Flex Message got some error");
       liff.closeWindow();
@@ -36,7 +36,7 @@ const sendTargetPicker = async () => {
 
 onMounted(async () => {
     try {
-      await liff.init({ liffId: "2005773506-b25V0Rgw" }); // Use own liffId
+      await liff.init({ liffId:  import.meta.env.VITE_Liff_ID }); // Use own liffId
       if (!liff.isLoggedIn())
         liff.login({ redirectUri: window.location.href });
     } catch (err) {
