@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@line/liff": "^2.23.2",
+    "current-device": "^0.10.2",
     "pinia": "^2.1.7",
     "swiper": "^11.1.4",
     "vue": "^3.4.21",

@@ -14,7 +14,7 @@ nav a {
 }
 
 @media (hover: hover) {
-  a:hover {
+  nav a:hover {
     text-decoration: none;
     background-color: #121d2f;
     outline: solid 2px #4493f8;
