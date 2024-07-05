@@ -10,6 +10,7 @@ import { RouterLink, RouterView } from 'vue-router';
         <RouterLink to="/watch">Watch</RouterLink>
         <RouterLink to="/swiper">Swiper</RouterLink>
         <RouterLink to="/gridAndFlex">GridAndFlex</RouterLink>
+        <RouterLink to="/webView">WebView</RouterLink>
         <RouterLink to="/vue">Vue</RouterLink>
       </nav>
     </div>
