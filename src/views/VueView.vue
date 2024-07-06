@@ -28,16 +28,16 @@ const menuList = [
         component: KeepAlive
     },
     {
+        title: 'Teleport',
+        component: Teleport
+    },
+    {
         title: 'DefineModel',
         component: DefineModel
     },
     {
         title: 'DefineExpose',
         component: DefineExpose
-    },
-    {
-        title: 'Teleport',
-        component: Teleport
     },
     {
         title: 'LazyLoad',

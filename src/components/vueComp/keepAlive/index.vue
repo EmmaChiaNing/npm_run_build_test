@@ -35,6 +35,9 @@ defineOptions({name: 'KeepAlive'})
 </script>
 <template>
     <div class="keep-alive">
+        <article>
+            <p>是一個內建元件，它的功能是在多個元件間動態切換時快取被移除的元件實例。</p>
+        </article>
         <menu>
             <li 
                 v-for="(item, index) in menuList" 

@@ -20,6 +20,9 @@ defineOptions({name: 'Teleport'})
 
 <template>
     <div class="teleport">
+        <article>
+            <p>是一個內建元件，它可以將一個元件內部的一部分模板「傳送」到該元件的DOM 結構外層的位置去。</p>
+        </article>
         <button @click="openConfirmModal">Open Confirm Modal</button>
         <button @click="openOverviewModal">Open Overview Modal</button>
         <Teleport to="#modal">

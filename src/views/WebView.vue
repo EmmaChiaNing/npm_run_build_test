@@ -1,14 +1,20 @@
 <script setup>
 import { onMounted, ref } from 'vue';
 import liff from '@line/liff';
-import Buttons from '@/components/webView/Buttons.vue'
-import ShareTargetPicker from '@/components/webView/ShareTargetPicker.vue'
-import Profile from '@/components/webView/Profile.vue'
-import CurrentDeviceType from '@/components/webView/CurrentDeviceType.vue'
+import VConsole from 'vconsole';
+
+import Buttons from '@/components/webView/Buttons.vue';
+import ShareTargetPicker from '@/components/webView/ShareTargetPicker.vue';
+import Profile from '@/components/webView/Profile.vue';
+import CurrentDeviceType from '@/components/webView/CurrentDeviceType.vue';
+import CloseWindow from '@/components/webView/CloseWindow.vue';
+import Console from '@/components/webView/VConsole.vue';
 
 const isLoggedIn = ref(false);
+const vConsole = new VConsole();
 
 onMounted(async () => {
+  vConsole.show();
   try {
     await liff.init({ liffId: import.meta.env.VITE_Liff_ID });
     if (liff) 
@@ -16,8 +22,7 @@ onMounted(async () => {
   } catch (error) {
     console.log(`liff.state init error ${error}`);
   }
-})
-
+});
 </script>
 
 <template>
@@ -26,7 +31,9 @@ onMounted(async () => {
       <template v-if="isLoggedIn">
             <ShareTargetPicker />
             <Profile />
+            <CloseWindow />
             <CurrentDeviceType />
+            <Console/>
       </template>
     </div>
 </template>

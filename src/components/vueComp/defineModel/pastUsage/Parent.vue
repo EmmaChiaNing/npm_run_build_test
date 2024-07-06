@@ -3,9 +3,9 @@ import { ref } from 'vue'
 import Child from './Child.vue'
 
 const value = ref('hello world');
-const getNewValue = (newVal) => {
-    alert(newVal);
-}
+// const getNewValue = (newVal) => {
+//     alert(newVal);
+// }
 </script>
 
 <template>
