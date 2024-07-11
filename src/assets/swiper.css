@@ -13,6 +13,20 @@
     overflow: hidden;
 }
 
+.swiper.swiper-banner {
+    width: 100%;
+    height: 350px;
+    border-radius: 5px;
+}
+
+.swiper.swiper-banner .swiper-slide .swiper-slide-item {
+    opacity: 0.5;
+}
+
+.swiper.swiper-banner .swiper-slide.swiper-slide-active .swiper-slide-item {
+    opacity: 1;
+}
+
 .swiper-photo .swiper-slide .swiper-slide-item img {
     filter: brightness(0.3);
     transform-origin: 50% 50%;

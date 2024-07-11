@@ -1,17 +1,8 @@
 <script setup>
 import { ref } from 'vue';
-import { Swiper, SwiperSlide } from 'swiper/vue';
-import PhotosSwiper from '@/components/swiper/Photos.vue'
-import ContentSwiper from '@/components/swiper/Content.vue';
-import ThumbsSwiper from '@/components/swiper/Thumbs.vue';
-import 'swiper/css';
-import '@/assets/swiper.css';
-import { Autoplay, Pagination, Navigation, Controller, Thumbs, EffectCoverflow, Zoom } from 'swiper/modules';
+import ConsumptionTopic from '@/components/swiper/consumptionTopic/ConsumptionTopic.vue';
+import HomeBanner from '@/components/swiper/homeBanner/HomeBanner.vue';
 
-const photoSwiper = ref(null);
-const contentSwiper = ref(null);
-const thumbsSwiper = ref(null);
-const modules = ref([Autoplay, Pagination, Navigation, Controller, Thumbs, EffectCoverflow, Zoom]);
 const swiperList = ref([
     {
         title: 'Slide 1',
@@ -27,43 +18,17 @@ const swiperList = ref([
         title: 'Slide 3',
 		img: 'https://picsum.photos/900/506?image=989',
         content: 'est cum architecto repudiandae itaque, corporis sit earum placeat.'
+	},
+	{
+        title: 'Slide 4',
+		img: 'https://picsum.photos/900/506',
+        content: 'olorem odio accusantium molestiae be itaque, corporis sit earum placeat.'
 	}
 ]);
 
-const setThumbsSwiper = (swiper) => {
-  thumbsSwiper.value = swiper;
-};
-
-const setPhotoSwiper = (swiper) => {
-    photoSwiper.value = swiper
-}
-
-const setContentSwiper = (swiper) => {
-    contentSwiper.value = swiper
-}
-
-
 </script>
 <template>
-    <div class="swiper-view">
-        <ContentSwiper 
-            :modules="modules" 
-            :photo-swiper="photoSwiper" 
-            :swiper-list="swiperList" 
-            :set-content-swiper="setContentSwiper"
-        />
-        <PhotosSwiper 
-            :modules="modules" 
-            :thumbs-swiper="thumbsSwiper" 
-            :content-swiper="contentSwiper" 
-            :swiper-list="swiperList" 
-            :set-photo-swiper="setPhotoSwiper"
-            :set-pag-info="setPagInfo"
-        />
-    </div>
-    <ThumbsSwiper 
-        :set-thumbs-swiper="setThumbsSwiper"
-        :swiper-list="swiperList" 
-    />
-
-  </template>
+    <ConsumptionTopic :list="swiperList"/>
+    <br/>
+    <HomeBanner :list="swiperList"/>
+</template>

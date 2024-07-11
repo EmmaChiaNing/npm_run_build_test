@@ -60,15 +60,15 @@ const setPagInfo =  (currentClass, totalClass) => {
             :zoom="true" 
             :limitToOriginalSize="false"
         >
-        <swiper-slide v-for="(item, index) in props.swiperList" :key="index">
-            <div class="bg-accent width height flex center align-center swiper-slide-item">
-                <p class="absolute">{{ item.title }}</p>
-                <img :src="item.img" :id="index"/>
-            </div>
-        </swiper-slide>
-        <template #container-end>
-            <div class="progress" ref="progressLine"></div>
-        </template>
+            <swiper-slide v-for="(item, index) in props.swiperList" :key="index">
+                <div class="bg-accent width height flex center align-center swiper-slide-item">
+                    <p class="absolute">{{ item.title }}</p>
+                    <img :src="item.img" :id="index"/>
+                </div>
+            </swiper-slide>
+            <template #container-end>
+                <div class="progress" ref="progressLine"></div>
+            </template>
         </swiper>
     </div>
     <div class="navigation">
