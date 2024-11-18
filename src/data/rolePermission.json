@@ -1,0 +1,2855 @@
+{
+    "role": {
+        "id": 1,
+        "name": "wish_super_admin",
+        "guard_name": "web",
+        "type": "wishMobile",
+        "created_by": 0,
+        "updated_by": 15,
+        "created_at": "2023-08-11T06:28:48.000000Z",
+        "updated_at": "2024-04-03T07:54:26.000000Z",
+        "permissions": [
+            "accountDisplay",
+            "createUser",
+            "updateUser",
+            "resetUserPassword",
+            "updateUserStatus",
+            "roleDisplay",
+            "createRole",
+            "updateRole",
+            "deleteRole",
+            "memberTransactionDisplay",
+            "createMemberTransaction",
+            "exportMemberTransaction",
+            "brandCategoryDisplay",
+            "createBrandCategory",
+            "updateBrandCategory",
+            "deleteBrandCategories",
+            "brandDisplay",
+            "createBrand",
+            "createBatchBrand",
+            "updateBrand",
+            "updateStoreCategories",
+            "deleteBrands",
+            "reviewBrand",
+            "enableBrand",
+            "storeDisplay",
+            "createStore",
+            "createBatchStore",
+            "updateStore",
+            "brandStoreAccountDisplay",
+            "createBrandStoreAccount",
+            "quicklyCreateBrandStoreAccount",
+            "resetBrandStoreAccountPassword",
+            "updateBrandStoreAccountStatus",
+            "updateBrandStoreAccount",
+            "brandStoreAccountRolePermissionsDisplay",
+            "createBrandStoreAccountRole",
+            "updateBrandStoreAccountRole",
+            "membershipLevelDisplay",
+            "createLevel",
+            "updateLevel",
+            "deleteLevels",
+            "reviewLevel",
+            "enableLevel",
+            "membershipLevelRuleDisplay",
+            "createRule",
+            "updateRule",
+            "deleteRules",
+            "reviewRule",
+            "enableRule",
+            "membershipLevelRecordDisplay",
+            "exportMembershipLevelRecord",
+            "memberPointTypeDisplay",
+            "createPointType",
+            "createThirdPartyPointType",
+            "updatePointType",
+            "updateThirdPartyPointType",
+            "deletePointTypes",
+            "deleteThirdPartyPointTypes",
+            "reviewPointType",
+            "enablePointType",
+            "memberRuleAllocationDisplay",
+            "createAllocationRule",
+            "updateAllocationRule",
+            "deleteAllocationRules",
+            "reviewAllocationRule",
+            "enableAllocationRule",
+            "memberRuleDeductionDisplay",
+            "createDeductionRule",
+            "updateDeductionRule",
+            "deleteDeductionRules",
+            "reviewDeductionRule",
+            "enableDeductionRule",
+            "memberPointTransactionRecordDisplay",
+            "exportMemberPointTransactionRecord",
+            "memberPointExportDisplay",
+            "searchMemberPointExchangeRule",
+            "createMemberPointExchangeRule",
+            "updateMemberPointExchangeRule",
+            "deleteMemberPointExchangeRule",
+            "memberTicketDisplay",
+            "createTicket",
+            "createIssuedTickets",
+            "updateTicket",
+            "deleteTickets",
+            "exportIssuedTicket",
+            "reviewTicket",
+            "enableTicket",
+            "memberTicketRecordDisplay",
+            "exportMemberTicketRecord",
+            "memberTicketTransferRecordDisplay",
+            "exportMemberTicketTransferRecord",
+            "memberTicketRedeemRecordReportDisplay",
+            "memberTicketRedeemDetailRecordReportDisplay",
+            "voucherDisplay",
+            "voucherStatisticsDisplay",
+            "createVoucher",
+            "updateVoucher",
+            "deleteVouchers",
+            "reviewVoucher",
+            "enableVoucher",
+            "voucherBoxDisplay",
+            "createVoucherBox",
+            "updateVoucherBox",
+            "deleteVoucherBoxes",
+            "issuedVoucherTransactionRecordDisplay",
+            "exportIssuedVoucherTransactionRecord",
+            "issuedVoucherTransferRecordDisplay",
+            "exportIssuedVoucherTransferRecord",
+            "externalTicketDisplay",
+            "searchExternalTicket",
+            "searchExternalTicketIssuedRecord",
+            "createExternalTicket",
+            "updateExternalTicket",
+            "memberCampaignDisplay",
+            "createMemberCampaign",
+            "updateMemberCampaign",
+            "triggerMemberCampaign",
+            "deleteMemberCampaigns",
+            "exportMemberCampaignStatus",
+            "reviewMemberCampaign",
+            "enableMemberCampaign",
+            "memberDisplay",
+            "updateMember",
+            "deactivateMember",
+            "lockMember",
+            "unlockMember",
+            "setLevelForMember",
+            "allocatePointsToMember",
+            "deductPointsFromMember",
+            "deductPointsFromMemberInExchangeForDiscount",
+            "allocateMemberTickets",
+            "updateIssuedTickets",
+            "pickup",
+            "unmaskProfile",
+            "exportMember",
+            "exportOneMemberLevelRecord",
+            "exportOneMemberPointRecord",
+            "exportOneMemberTicketRecord",
+            "exportOneMemberTransactionRecord",
+            "memberAttributeDisplay",
+            "updateMemberAttribute",
+            "memberBriefTermDisplay",
+            "createBriefTerm",
+            "createBriefTermContent",
+            "updateBriefTermContent",
+            "deleteBriefTerm",
+            "deleteBriefTermContents",
+            "reviewBriefTermContent",
+            "enableBriefTermContent",
+            "memberSmsDisplay",
+            "getSMSVerificationCode",
+            "memberListDisplay",
+            "createMemberList",
+            "createMemberListBatch",
+            "deleteMemberLists",
+            "deleteMemberListBatch",
+            "exportMemberList",
+            "pickupActivityCategoryDisplay",
+            "createPickupActivityCategory",
+            "updatePickupActivityCategory",
+            "deletePickupActivityCategories",
+            "pickupActivityDisplay",
+            "pickupActivityVoucherStatusDisplay",
+            "createPickupActivity",
+            "updatePickupActivity",
+            "deletePickupActivities",
+            "exportPickupCode",
+            "reviewPickupActivity",
+            "enablePickupActivity",
+            "pickupActivityRecordDisplay",
+            "exportPickupActivityRecord",
+            "memberTicketIssueReportDisplay",
+            "memberTicketIssueDetailReportDisplay",
+            "cmsDisplay",
+            "cmsHomeFullPageAdDisplay",
+            "cmsHomeCarouselAdDisplay",
+            "cmsNewsDisplay",
+            "cmsPromoDisplay",
+            "cmsEdmDisplay",
+            "cmsFaqDisplay",
+            "cmsBookDisplay",
+            "cmsProjectReserved1Display",
+            "cmsHomeFullPageAdVideoUpload",
+            "cmsHomeCarouselAdVideoUpload",
+            "cmsNewsVideoUpload",
+            "cmsPromoVideoUpload",
+            "cmsEdmVideoUpload",
+            "cmsFaqVideoUpload",
+            "cmsProjectReserved1VideoUpload",
+            "createCms",
+            "updateCms",
+            "updateAgreeEnableReviewCms",
+            "batchUpdateCmsWeight",
+            "archiveCms",
+            "deleteCms",
+            "reviewCms",
+            "enableCms",
+            "cmsNewsCategoryDisplay",
+            "cmsPromoCategoryDisplay",
+            "createCmsCategory",
+            "updateCmsCategory",
+            "deleteCmsCategories",
+            "linkBlockDeepLinkSchemeDisplay",
+            "linkBlockDeepLinkSchemeGenerateDisplay",
+            "createDeepLinkScheme",
+            "updateDeepLinkScheme",
+            "productDisplay",
+            "createProduct",
+            "createCategory",
+            "updateProduct",
+            "updateCategory",
+            "deleteProducts",
+            "deleteCategories",
+            "searchProductBatches",
+            "searchProductBatchCodes",
+            "createProductBatch",
+            "updateProductBatch",
+            "invalidProductBatches",
+            "exportProductBatchCodes",
+            "reviewProductBatch",
+            "enableProductBatch",
+            "codeGeneratorDisplay",
+            "createCodeGenerator",
+            "updateCodeGenerator",
+            "deleteCodeGenerators",
+            "reviewCodeGenerators",
+            "enableCodeGenerators",
+            "externalCodeGeneratorDisplay",
+            "createExternalCodeGenerator",
+            "updateExternalCodeGenerator",
+            "updateExternalCodeGeneratorsBrandFields",
+            "deleteExternalCodeGenerators",
+            "externalCodeGeneratorOrderDisplay",
+            "menuDisplay",
+            "createMenu",
+            "createMenuProduct",
+            "updateMenu",
+            "updateMenuProduct",
+            "deleteMenus",
+            "deleteMenuProducts",
+            "reviewMenu",
+            "enableMenu",
+            "memberCardDisplay",
+            "createMemberCardType",
+            "createIssuedMemberCard",
+            "updateMemberCardType",
+            "updateIssuedMemberCardBatch",
+            "updateIssuedMemberCards",
+            "deleteMemberCardTypes",
+            "exportMemberCard",
+            "reviewMemberCardTypes",
+            "enableMemberCardTypes",
+            "memberCardRecordDisplay",
+            "exportMemberCardRecord",
+            "pushInboxDisplay",
+            "createInboxMessage",
+            "updateInboxMessage",
+            "stopBatchPushTask",
+            "deleteInboxMessages",
+            "reviewInboxMessages",
+            "enableInboxMessages",
+            "InboxLineMessageDisplay",
+            "findInboxLineMessage",
+            "createInboxLineMessage",
+            "updateInboxLineMessage",
+            "stopBatchLinePushTask",
+            "archiveInboxLineMessage",
+            "deleteInboxLineMessages",
+            "reviewInboxLineMessages",
+            "enableInboxLineMessages",
+            "memberFilterDisplay",
+            "createMemberFilter",
+            "updateMemberFilter",
+            "triggerMemberFilter",
+            "deleteMemberFilters",
+            "reviewMemberFilters",
+            "enableMemberFilters",
+            "memberTagFilterDisplay",
+            "findMemberTagFilter",
+            "createMemberTagFilter",
+            "updateMemberTagFilter",
+            "triggerMemberTagFilter",
+            "deleteMemberTagFilters",
+            "synchronizedUploadTransactionDisplay",
+            "paymentItemDisplay",
+            "createPaymentItem",
+            "updatePaymentItem",
+            "paymentServiceDisplay",
+            "createPaymentService",
+            "updatePaymentService",
+            "updatePaymentServiceProviderStoreFields",
+            "paymentDisplay",
+            "refundPayment",
+            "manuallyRefundPayment",
+            "rejectRefundPayment",
+            "partiallyRefundPayment",
+            "redeemPayment",
+            "paymentTaskRecordDisplay",
+            "paymentRedeemRecordDisplay",
+            "relayItemDisplay",
+            "createRelayItem",
+            "createRelayItemApi",
+            "updateRelayItem",
+            "updateRelayItemApi",
+            "deleteRelayItems",
+            "deleteRelayItemApis",
+            "mobileAppConfigurationDisplay",
+            "mobileAppCopywritingDisplay",
+            "createMobileAppConfiguration",
+            "createMobileAppCopywriting",
+            "updateMobileAppConfiguration",
+            "updateMobileAppCopywriting",
+            "clientAppKeyDisplay",
+            "createClientAppKey",
+            "updateClientAppKey",
+            "updateClientAppKeyEnable",
+            "missionCategoryDisplay",
+            "createMissionCategory",
+            "updateMissionCategory",
+            "deleteMissionCategories",
+            "missionDisplay",
+            "createMission",
+            "updateMission",
+            "deleteMissions",
+            "reviewMission",
+            "enableMission",
+            "externalSubMissionTypesDisplay",
+            "createExternalSubMissionType",
+            "updateExternalSubMissionType",
+            "deleteExternalSubMissionTypes",
+            "missionTransactionRecordDisplay",
+            "milestoneRewardTransactionRecordDisplay",
+            "subMissionTransactionRecordDisplay",
+            "getMilestoneSubMissionTransactionRecordReports",
+            "getMissionProgressStatistic",
+            "eventNotificationDisplay",
+            "createEventNotification",
+            "updateEventNotification",
+            "deleteEventNotifications",
+            "reviewEventNotification",
+            "enableEventNotification",
+            "notificationConfigurationDisplay",
+            "eventNotificationTaskDisplay",
+            "brandStoreAccountEventNotificationTaskDisplay",
+            "unmaskEventNotificationContent",
+            "tagDisplay",
+            "createTag",
+            "addMemberToTagMemberList",
+            "addMemberListToTagMemberList",
+            "updateTag",
+            "deleteTags",
+            "deleteTagMemberListBatchRows",
+            "deleteMembersFromMemberList",
+            "exportTagMemberList",
+            "saleActivityDisplay",
+            "createSaleActivity",
+            "updateSaleActivity",
+            "deleteSaleActivities",
+            "saleActivityCategoryDisplay",
+            "createSaleActivityCategory",
+            "updateSaleActivityCategory",
+            "deleteSaleActivityCategories",
+            "saleActivityConfigurationDisplay",
+            "updateSaleActivityHandlingFeeConfiguration",
+            "updateSaleActivityReceiptConfiguration",
+            "voucherSaleActivityOrderDisplay",
+            "issueVouchersByVoucherSaleActivityOrder",
+            "voucherSaleActivityOrderRefund",
+            "voucherSaleActivityOrderRefundByManually",
+            "voucherSaleActivityOrderPartiallyRefund",
+            "voucherSaleActivityOrderRejectRefundApplication",
+            "voucherSaleActivityOrderIssueCredit",
+            "voucherSaleActivityOrderInvalidateReceipt",
+            "receiptToolDisplay",
+            "createReceiptTool",
+            "updateReceiptTool",
+            "receiptDisplay",
+            "updateReceiptIfInit",
+            "updateReceiptIfInvalidationInit",
+            "issueReceiptIfUnprocessedOrFailed",
+            "exportReceipt",
+            "creditDisplay",
+            "updateCreditIfInit",
+            "exportCredit",
+            "subscriptionActivityDisplay",
+            "createSubscriptionActivity",
+            "createSubscriptionProgramAndPrivilege",
+            "updateSubscriptionActivity",
+            "updateSubscriptionProgramAndPrivilege",
+            "deleteActivities",
+            "deleteSubscriptionProgramAndPrivileges",
+            "reviewSubscriptionProgram",
+            "enableSubscriptionProgram",
+            "subscriptionProgramContractDisplay",
+            "subscriptionProgramContractOrderDisplay",
+            "subscriptionProgramContractOrderRefundByManually",
+            "subscriptionProgramContractOrderIssueCredit",
+            "subscriptionProgramContractOrderInvalidateReceipt",
+            "subscriptionConfigurationDisplay",
+            "updateSubscriptionHandlingFeeConfiguration",
+            "updateSubscriptionReceiptConfiguration",
+            "updateSubscriptionRenewalConfiguration",
+            "shopMenuDisplay",
+            "createShopMenu",
+            "createShopMenuShopMerchandises",
+            "createAdditionalShopMerchandise",
+            "copyShopMenu",
+            "updateShopMenu",
+            "updateShopCategories",
+            "deleteShopMenus",
+            "deleteShopMenuShopMerchandises",
+            "deleteAdditionalMerchandises",
+            "merchandiseDisplay",
+            "createShopMerchandise",
+            "updateShopMerchandise",
+            "deleteShopMerchandises",
+            "reviewShopMerchandise",
+            "enableShopMerchandise",
+            "merchandiseItemDisplay",
+            "createShopMerchandiseItem",
+            "updateShopMerchandiseItem",
+            "deleteShopMerchandiseItems",
+            "reviewShopMerchandiseItem",
+            "enableShopMerchandiseItem",
+            "shopMerchandiseSpecDisplay",
+            "createShopMerchandiseSpec",
+            "updateShopMerchandiseSpec",
+            "deleteShopMerchandiseSpecs",
+            "reviewShopMerchandiseSpec",
+            "enableShopMerchandiseSpec",
+            "shopMerchandiseCategoryDisplay",
+            "updateShopMerchandiseCategory",
+            "deleteShopMerchandiseCategories",
+            "shopConfigurationDisplay",
+            "updateShopMainConfiguration",
+            "shopBrandConfigurationDisplay",
+            "createShopBrandConfiguration",
+            "updateShopBrandConfiguration",
+            "shopOrderDisplay",
+            "shopOrderRefund",
+            "shopOrderRefundByManually",
+            "shopOrderPartiallyRefund",
+            "shopOrderRetryRefund",
+            "shopOrderExtraColumnKeyDisplay",
+            "createShopOrderExtraColumnKey",
+            "updateShopOrderExtraColumnKey",
+            "deleteShopOrderExtraColumnKey",
+            "pointDiscountRuleDisplay",
+            "createShopPointDiscountRule",
+            "deleteShopPointDiscountRules",
+            "getShopScheduledPromotionalActivity",
+            "searchShopScheduledPromotionalActivities",
+            "createShopScheduledPromotionalActivity",
+            "updateShopScheduledPromotionalActivity",
+            "deleteShopScheduledPromotionalActivities",
+            "getShopMemberTicketPromotionalActivity",
+            "searchShopMemberTicketPromotionalActivities",
+            "createShopMemberTicketPromotionalActivity",
+            "updateShopMemberTicketPromotionalActivity",
+            "deleteShopMemberTicketPromotionalActivities",
+            "getShopMerchandiseSaleLimit",
+            "searchShopMerchandiseSaleLimits",
+            "createShopMerchandiseSaleLimit",
+            "updateShopMerchandiseSaleLimit",
+            "deleteShopMerchandiseSaleLimits",
+            "storeConfigurationSettingDisplay",
+            "createShopStoreHolidayServiceSetting",
+            "createShopStoreSuspendServiceSetting",
+            "updateShopWeekdayServiceSetting",
+            "updateShopStoreHolidayServiceSetting",
+            "updateShopStoreSuspendServiceSetting",
+            "updateShopStoreTodayServiceStatus",
+            "updateShopStoreReplenishTimeServiceSetting",
+            "updateShopStoreOverMinutesServiceSetting",
+            "updateShopStoreMerchandisesAvailableStatusSettings",
+            "updateShopStoreMerchandiseItemsStockStatus",
+            "updateShopStoreMerchandiseItemSpecOptionsStockStatus",
+            "deleteShopStoreHolidayServiceSettings",
+            "deleteShopStoreSuspendServiceSetting",
+            "thirdPartyDisplay",
+            "logisticToolDisplay",
+            "createLogisticTool",
+            "updateLogisticTool",
+            "deleteLogisticTool",
+            "logisticOrderDisplay",
+            "homeDeliveryOrderDisplay",
+            "updateHomeDeliveryOrder",
+            "updateBoardsByMappingCode",
+            "regularCustomerOrderDisplay",
+            "refundRegularCustomerOrder",
+            "retryRefundRegularCustomerOrder",
+            "refundManuallyRegularCustomerOrder",
+            "regularCustomerConfigurationDisplay",
+            "updateRegularCustomerReceiptConfiguration",
+            "searchWebhookConfigs",
+            "findWebhookConfig",
+            "createWebhookConfig",
+            "updateWebhookConfig",
+            "deleteWebhookConfigs",
+            "retrySendWebhook",
+            "searchThirdPartyOrder",
+            "searchThirdPartyOrderTransaction",
+            "refundThirdPartyOrder",
+            "memberDashboard",
+            "memberTransactionDashboard",
+            "memberTransactionModelDashboard",
+            "exportMemberPointSummary",
+            "verifyUnverifiedMember",
+            "updateMemberMobile",
+            "updateMemberPassword",
+            "searchMemberRecommendStats",
+            "searchMemberAdvancedFilter",
+            "findMemberAdvancedFilter",
+            "createMemberAdvancedFilter",
+            "exportMemberAdvancedFilter",
+            "clearMemberSummaryCache"
+        ]
+    },
+    "rolePermissions": [
+        "accountDisplay",
+        "createUser",
+        "updateUser",
+        "resetUserPassword",
+        "updateUserStatus",
+        "roleDisplay",
+        "createRole",
+        "updateRole",
+        "deleteRole",
+        "memberTransactionDisplay",
+        "createMemberTransaction",
+        "exportMemberTransaction",
+        "brandCategoryDisplay",
+        "createBrandCategory",
+        "updateBrandCategory",
+        "deleteBrandCategories",
+        "brandDisplay",
+        "createBrand",
+        "createBatchBrand",
+        "updateBrand",
+        "updateStoreCategories",
+        "deleteBrands",
+        "reviewBrand",
+        "enableBrand",
+        "storeDisplay",
+        "createStore",
+        "createBatchStore",
+        "updateStore",
+        "brandStoreAccountDisplay",
+        "createBrandStoreAccount",
+        "quicklyCreateBrandStoreAccount",
+        "resetBrandStoreAccountPassword",
+        "updateBrandStoreAccountStatus",
+        "updateBrandStoreAccount",
+        "brandStoreAccountRolePermissionsDisplay",
+        "createBrandStoreAccountRole",
+        "updateBrandStoreAccountRole",
+        "membershipLevelDisplay",
+        "createLevel",
+        "updateLevel",
+        "deleteLevels",
+        "reviewLevel",
+        "enableLevel",
+        "membershipLevelRuleDisplay",
+        "createRule",
+        "updateRule",
+        "deleteRules",
+        "reviewRule",
+        "enableRule",
+        "membershipLevelRecordDisplay",
+        "exportMembershipLevelRecord",
+        "memberPointTypeDisplay",
+        "createPointType",
+        "createThirdPartyPointType",
+        "updatePointType",
+        "updateThirdPartyPointType",
+        "deletePointTypes",
+        "deleteThirdPartyPointTypes",
+        "reviewPointType",
+        "enablePointType",
+        "memberRuleAllocationDisplay",
+        "createAllocationRule",
+        "updateAllocationRule",
+        "deleteAllocationRules",
+        "reviewAllocationRule",
+        "enableAllocationRule",
+        "memberRuleDeductionDisplay",
+        "createDeductionRule",
+        "updateDeductionRule",
+        "deleteDeductionRules",
+        "reviewDeductionRule",
+        "enableDeductionRule",
+        "memberPointTransactionRecordDisplay",
+        "exportMemberPointTransactionRecord",
+        "memberPointExportDisplay",
+        "searchMemberPointExchangeRule",
+        "createMemberPointExchangeRule",
+        "updateMemberPointExchangeRule",
+        "deleteMemberPointExchangeRule",
+        "memberTicketDisplay",
+        "createTicket",
+        "createIssuedTickets",
+        "updateTicket",
+        "deleteTickets",
+        "exportIssuedTicket",
+        "reviewTicket",
+        "enableTicket",
+        "memberTicketRecordDisplay",
+        "exportMemberTicketRecord",
+        "memberTicketTransferRecordDisplay",
+        "exportMemberTicketTransferRecord",
+        "memberTicketRedeemRecordReportDisplay",
+        "memberTicketRedeemDetailRecordReportDisplay",
+        "voucherDisplay",
+        "voucherStatisticsDisplay",
+        "createVoucher",
+        "updateVoucher",
+        "deleteVouchers",
+        "reviewVoucher",
+        "enableVoucher",
+        "voucherBoxDisplay",
+        "createVoucherBox",
+        "updateVoucherBox",
+        "deleteVoucherBoxes",
+        "issuedVoucherTransactionRecordDisplay",
+        "exportIssuedVoucherTransactionRecord",
+        "issuedVoucherTransferRecordDisplay",
+        "exportIssuedVoucherTransferRecord",
+        "externalTicketDisplay",
+        "searchExternalTicket",
+        "searchExternalTicketIssuedRecord",
+        "createExternalTicket",
+        "updateExternalTicket",
+        "memberCampaignDisplay",
+        "createMemberCampaign",
+        "updateMemberCampaign",
+        "triggerMemberCampaign",
+        "deleteMemberCampaigns",
+        "exportMemberCampaignStatus",
+        "reviewMemberCampaign",
+        "enableMemberCampaign",
+        "memberDisplay",
+        "updateMember",
+        "deactivateMember",
+        "lockMember",
+        "unlockMember",
+        "setLevelForMember",
+        "allocatePointsToMember",
+        "deductPointsFromMember",
+        "deductPointsFromMemberInExchangeForDiscount",
+        "allocateMemberTickets",
+        "updateIssuedTickets",
+        "pickup",
+        "unmaskProfile",
+        "exportMember",
+        "exportOneMemberLevelRecord",
+        "exportOneMemberPointRecord",
+        "exportOneMemberTicketRecord",
+        "exportOneMemberTransactionRecord",
+        "memberAttributeDisplay",
+        "updateMemberAttribute",
+        "memberBriefTermDisplay",
+        "createBriefTerm",
+        "createBriefTermContent",
+        "updateBriefTermContent",
+        "deleteBriefTerm",
+        "deleteBriefTermContents",
+        "reviewBriefTermContent",
+        "enableBriefTermContent",
+        "memberSmsDisplay",
+        "getSMSVerificationCode",
+        "memberListDisplay",
+        "createMemberList",
+        "createMemberListBatch",
+        "deleteMemberLists",
+        "deleteMemberListBatch",
+        "exportMemberList",
+        "pickupActivityCategoryDisplay",
+        "createPickupActivityCategory",
+        "updatePickupActivityCategory",
+        "deletePickupActivityCategories",
+        "pickupActivityDisplay",
+        "pickupActivityVoucherStatusDisplay",
+        "createPickupActivity",
+        "updatePickupActivity",
+        "deletePickupActivities",
+        "exportPickupCode",
+        "reviewPickupActivity",
+        "enablePickupActivity",
+        "pickupActivityRecordDisplay",
+        "exportPickupActivityRecord",
+        "memberTicketIssueReportDisplay",
+        "memberTicketIssueDetailReportDisplay",
+        "cmsDisplay",
+        "cmsHomeFullPageAdDisplay",
+        "cmsHomeCarouselAdDisplay",
+        "cmsNewsDisplay",
+        "cmsPromoDisplay",
+        "cmsEdmDisplay",
+        "cmsFaqDisplay",
+        "cmsBookDisplay",
+        "cmsProjectReserved1Display",
+        "cmsHomeFullPageAdVideoUpload",
+        "cmsHomeCarouselAdVideoUpload",
+        "cmsNewsVideoUpload",
+        "cmsPromoVideoUpload",
+        "cmsEdmVideoUpload",
+        "cmsFaqVideoUpload",
+        "cmsProjectReserved1VideoUpload",
+        "createCms",
+        "updateCms",
+        "updateAgreeEnableReviewCms",
+        "batchUpdateCmsWeight",
+        "archiveCms",
+        "deleteCms",
+        "reviewCms",
+        "enableCms",
+        "cmsNewsCategoryDisplay",
+        "cmsPromoCategoryDisplay",
+        "createCmsCategory",
+        "updateCmsCategory",
+        "deleteCmsCategories",
+        "linkBlockDeepLinkSchemeDisplay",
+        "linkBlockDeepLinkSchemeGenerateDisplay",
+        "createDeepLinkScheme",
+        "updateDeepLinkScheme",
+        "productDisplay",
+        "createProduct",
+        "createCategory",
+        "updateProduct",
+        "updateCategory",
+        "deleteProducts",
+        "deleteCategories",
+        "searchProductBatches",
+        "searchProductBatchCodes",
+        "createProductBatch",
+        "updateProductBatch",
+        "invalidProductBatches",
+        "exportProductBatchCodes",
+        "reviewProductBatch",
+        "enableProductBatch",
+        "codeGeneratorDisplay",
+        "createCodeGenerator",
+        "updateCodeGenerator",
+        "deleteCodeGenerators",
+        "reviewCodeGenerators",
+        "enableCodeGenerators",
+        "externalCodeGeneratorDisplay",
+        "createExternalCodeGenerator",
+        "updateExternalCodeGenerator",
+        "updateExternalCodeGeneratorsBrandFields",
+        "deleteExternalCodeGenerators",
+        "externalCodeGeneratorOrderDisplay",
+        "menuDisplay",
+        "createMenu",
+        "createMenuProduct",
+        "updateMenu",
+        "updateMenuProduct",
+        "deleteMenus",
+        "deleteMenuProducts",
+        "reviewMenu",
+        "enableMenu",
+        "memberCardDisplay",
+        "createMemberCardType",
+        "createIssuedMemberCard",
+        "updateMemberCardType",
+        "updateIssuedMemberCardBatch",
+        "updateIssuedMemberCards",
+        "deleteMemberCardTypes",
+        "exportMemberCard",
+        "reviewMemberCardTypes",
+        "enableMemberCardTypes",
+        "memberCardRecordDisplay",
+        "exportMemberCardRecord",
+        "pushInboxDisplay",
+        "createInboxMessage",
+        "updateInboxMessage",
+        "stopBatchPushTask",
+        "deleteInboxMessages",
+        "reviewInboxMessages",
+        "enableInboxMessages",
+        "InboxLineMessageDisplay",
+        "findInboxLineMessage",
+        "createInboxLineMessage",
+        "updateInboxLineMessage",
+        "stopBatchLinePushTask",
+        "archiveInboxLineMessage",
+        "deleteInboxLineMessages",
+        "reviewInboxLineMessages",
+        "enableInboxLineMessages",
+        "memberFilterDisplay",
+        "createMemberFilter",
+        "updateMemberFilter",
+        "triggerMemberFilter",
+        "deleteMemberFilters",
+        "reviewMemberFilters",
+        "enableMemberFilters",
+        "memberTagFilterDisplay",
+        "findMemberTagFilter",
+        "createMemberTagFilter",
+        "updateMemberTagFilter",
+        "triggerMemberTagFilter",
+        "deleteMemberTagFilters",
+        "synchronizedUploadTransactionDisplay",
+        "paymentItemDisplay",
+        "createPaymentItem",
+        "updatePaymentItem",
+        "paymentServiceDisplay",
+        "createPaymentService",
+        "updatePaymentService",
+        "updatePaymentServiceProviderStoreFields",
+        "paymentDisplay",
+        "refundPayment",
+        "manuallyRefundPayment",
+        "rejectRefundPayment",
+        "partiallyRefundPayment",
+        "redeemPayment",
+        "paymentTaskRecordDisplay",
+        "paymentRedeemRecordDisplay",
+        "relayItemDisplay",
+        "createRelayItem",
+        "createRelayItemApi",
+        "updateRelayItem",
+        "updateRelayItemApi",
+        "deleteRelayItems",
+        "deleteRelayItemApis",
+        "mobileAppConfigurationDisplay",
+        "mobileAppCopywritingDisplay",
+        "createMobileAppConfiguration",
+        "createMobileAppCopywriting",
+        "updateMobileAppConfiguration",
+        "updateMobileAppCopywriting",
+        "clientAppKeyDisplay",
+        "createClientAppKey",
+        "updateClientAppKey",
+        "updateClientAppKeyEnable",
+        "missionCategoryDisplay",
+        "createMissionCategory",
+        "updateMissionCategory",
+        "deleteMissionCategories",
+        "missionDisplay",
+        "createMission",
+        "updateMission",
+        "deleteMissions",
+        "reviewMission",
+        "enableMission",
+        "externalSubMissionTypesDisplay",
+        "createExternalSubMissionType",
+        "updateExternalSubMissionType",
+        "deleteExternalSubMissionTypes",
+        "missionTransactionRecordDisplay",
+        "milestoneRewardTransactionRecordDisplay",
+        "subMissionTransactionRecordDisplay",
+        "getMilestoneSubMissionTransactionRecordReports",
+        "getMissionProgressStatistic",
+        "eventNotificationDisplay",
+        "createEventNotification",
+        "updateEventNotification",
+        "deleteEventNotifications",
+        "reviewEventNotification",
+        "enableEventNotification",
+        "notificationConfigurationDisplay",
+        "eventNotificationTaskDisplay",
+        "brandStoreAccountEventNotificationTaskDisplay",
+        "unmaskEventNotificationContent",
+        "tagDisplay",
+        "createTag",
+        "addMemberToTagMemberList",
+        "addMemberListToTagMemberList",
+        "updateTag",
+        "deleteTags",
+        "deleteTagMemberListBatchRows",
+        "deleteMembersFromMemberList",
+        "exportTagMemberList",
+        "saleActivityDisplay",
+        "createSaleActivity",
+        "updateSaleActivity",
+        "deleteSaleActivities",
+        "saleActivityCategoryDisplay",
+        "createSaleActivityCategory",
+        "updateSaleActivityCategory",
+        "deleteSaleActivityCategories",
+        "saleActivityConfigurationDisplay",
+        "updateSaleActivityHandlingFeeConfiguration",
+        "updateSaleActivityReceiptConfiguration",
+        "voucherSaleActivityOrderDisplay",
+        "issueVouchersByVoucherSaleActivityOrder",
+        "voucherSaleActivityOrderRefund",
+        "voucherSaleActivityOrderRefundByManually",
+        "voucherSaleActivityOrderPartiallyRefund",
+        "voucherSaleActivityOrderRejectRefundApplication",
+        "voucherSaleActivityOrderIssueCredit",
+        "voucherSaleActivityOrderInvalidateReceipt",
+        "receiptToolDisplay",
+        "createReceiptTool",
+        "updateReceiptTool",
+        "receiptDisplay",
+        "updateReceiptIfInit",
+        "updateReceiptIfInvalidationInit",
+        "issueReceiptIfUnprocessedOrFailed",
+        "exportReceipt",
+        "creditDisplay",
+        "updateCreditIfInit",
+        "exportCredit",
+        "subscriptionActivityDisplay",
+        "createSubscriptionActivity",
+        "createSubscriptionProgramAndPrivilege",
+        "updateSubscriptionActivity",
+        "updateSubscriptionProgramAndPrivilege",
+        "deleteActivities",
+        "deleteSubscriptionProgramAndPrivileges",
+        "reviewSubscriptionProgram",
+        "enableSubscriptionProgram",
+        "subscriptionProgramContractDisplay",
+        "subscriptionProgramContractOrderDisplay",
+        "subscriptionProgramContractOrderRefundByManually",
+        "subscriptionProgramContractOrderIssueCredit",
+        "subscriptionProgramContractOrderInvalidateReceipt",
+        "subscriptionConfigurationDisplay",
+        "updateSubscriptionHandlingFeeConfiguration",
+        "updateSubscriptionReceiptConfiguration",
+        "updateSubscriptionRenewalConfiguration",
+        "shopMenuDisplay",
+        "createShopMenu",
+        "createShopMenuShopMerchandises",
+        "createAdditionalShopMerchandise",
+        "copyShopMenu",
+        "updateShopMenu",
+        "updateShopCategories",
+        "deleteShopMenus",
+        "deleteShopMenuShopMerchandises",
+        "deleteAdditionalMerchandises",
+        "merchandiseDisplay",
+        "createShopMerchandise",
+        "updateShopMerchandise",
+        "deleteShopMerchandises",
+        "reviewShopMerchandise",
+        "enableShopMerchandise",
+        "merchandiseItemDisplay",
+        "createShopMerchandiseItem",
+        "updateShopMerchandiseItem",
+        "deleteShopMerchandiseItems",
+        "reviewShopMerchandiseItem",
+        "enableShopMerchandiseItem",
+        "shopMerchandiseSpecDisplay",
+        "createShopMerchandiseSpec",
+        "updateShopMerchandiseSpec",
+        "deleteShopMerchandiseSpecs",
+        "reviewShopMerchandiseSpec",
+        "enableShopMerchandiseSpec",
+        "shopMerchandiseCategoryDisplay",
+        "updateShopMerchandiseCategory",
+        "deleteShopMerchandiseCategories",
+        "shopConfigurationDisplay",
+        "updateShopMainConfiguration",
+        "shopBrandConfigurationDisplay",
+        "createShopBrandConfiguration",
+        "updateShopBrandConfiguration",
+        "shopOrderDisplay",
+        "shopOrderRefund",
+        "shopOrderRefundByManually",
+        "shopOrderPartiallyRefund",
+        "shopOrderRetryRefund",
+        "shopOrderExtraColumnKeyDisplay",
+        "createShopOrderExtraColumnKey",
+        "updateShopOrderExtraColumnKey",
+        "deleteShopOrderExtraColumnKey",
+        "pointDiscountRuleDisplay",
+        "createShopPointDiscountRule",
+        "deleteShopPointDiscountRules",
+        "getShopScheduledPromotionalActivity",
+        "searchShopScheduledPromotionalActivities",
+        "createShopScheduledPromotionalActivity",
+        "updateShopScheduledPromotionalActivity",
+        "deleteShopScheduledPromotionalActivities",
+        "getShopMemberTicketPromotionalActivity",
+        "searchShopMemberTicketPromotionalActivities",
+        "createShopMemberTicketPromotionalActivity",
+        "updateShopMemberTicketPromotionalActivity",
+        "deleteShopMemberTicketPromotionalActivities",
+        "getShopMerchandiseSaleLimit",
+        "searchShopMerchandiseSaleLimits",
+        "createShopMerchandiseSaleLimit",
+        "updateShopMerchandiseSaleLimit",
+        "deleteShopMerchandiseSaleLimits",
+        "storeConfigurationSettingDisplay",
+        "createShopStoreHolidayServiceSetting",
+        "createShopStoreSuspendServiceSetting",
+        "updateShopWeekdayServiceSetting",
+        "updateShopStoreHolidayServiceSetting",
+        "updateShopStoreSuspendServiceSetting",
+        "updateShopStoreTodayServiceStatus",
+        "updateShopStoreReplenishTimeServiceSetting",
+        "updateShopStoreOverMinutesServiceSetting",
+        "updateShopStoreMerchandisesAvailableStatusSettings",
+        "updateShopStoreMerchandiseItemsStockStatus",
+        "updateShopStoreMerchandiseItemSpecOptionsStockStatus",
+        "deleteShopStoreHolidayServiceSettings",
+        "deleteShopStoreSuspendServiceSetting",
+        "thirdPartyDisplay",
+        "logisticToolDisplay",
+        "createLogisticTool",
+        "updateLogisticTool",
+        "deleteLogisticTool",
+        "logisticOrderDisplay",
+        "homeDeliveryOrderDisplay",
+        "updateHomeDeliveryOrder",
+        "updateBoardsByMappingCode",
+        "regularCustomerOrderDisplay",
+        "refundRegularCustomerOrder",
+        "retryRefundRegularCustomerOrder",
+        "refundManuallyRegularCustomerOrder",
+        "regularCustomerConfigurationDisplay",
+        "updateRegularCustomerReceiptConfiguration",
+        "searchWebhookConfigs",
+        "findWebhookConfig",
+        "createWebhookConfig",
+        "updateWebhookConfig",
+        "deleteWebhookConfigs",
+        "retrySendWebhook",
+        "searchThirdPartyOrder",
+        "searchThirdPartyOrderTransaction",
+        "refundThirdPartyOrder",
+        "memberDashboard",
+        "memberTransactionDashboard",
+        "memberTransactionModelDashboard",
+        "exportMemberPointSummary",
+        "verifyUnverifiedMember",
+        "updateMemberMobile",
+        "updateMemberPassword",
+        "searchMemberRecommendStats",
+        "searchMemberAdvancedFilter",
+        "findMemberAdvancedFilter",
+        "createMemberAdvancedFilter",
+        "exportMemberAdvancedFilter",
+        "clearMemberSummaryCache"
+    ],
+    "viewPermissions": {
+        "general": {
+            "module": {
+                "display": [
+                    "regularCustomerModuleDisplay"
+                ]
+            }
+        },
+        "permissionModule": {
+            "account": {
+                "display": [
+                    "accountDisplay"
+                ],
+                "create": [
+                    "createUser"
+                ],
+                "modify": [
+                    "updateUser",
+                    "resetUserPassword",
+                    "updateUserStatus"
+                ],
+                "delete": [],
+                "export": [],
+                "review": [],
+                "enable": []
+            },
+            "role": {
+                "display": [
+                    "roleDisplay"
+                ],
+                "create": [
+                    "createRole"
+                ],
+                "modify": [
+                    "updateRole"
+                ],
+                "delete": [
+                    "deleteRole"
+                ],
+                "export": [],
+                "review": [],
+                "enable": []
+            }
+        },
+        "memberTransactionModule": {
+            "memberTransaction": {
+                "display": [
+                    "memberTransactionDisplay"
+                ],
+                "create": [
+                    "createMemberTransaction"
+                ],
+                "modify": [],
+                "delete": [],
+                "export": [
+                    "exportMemberTransaction"
+                ],
+                "review": [],
+                "enable": []
+            }
+        },
+        "brandModule": {
+            "brandCategory": {
+                "display": [
+                    "brandCategoryDisplay"
+                ],
+                "create": [
+                    "createBrandCategory"
+                ],
+                "modify": [
+                    "updateBrandCategory"
+                ],
+                "delete": [
+                    "deleteBrandCategories"
+                ],
+                "export": [],
+                "review": [],
+                "enable": []
+            },
+            "brand": {
+                "display": [
+                    "brandDisplay"
+                ],
+                "create": [
+                    "createBrand",
+                    "createBatchBrand"
+                ],
+                "modify": [
+                    "updateBrand",
+                    "updateStoreCategories"
+                ],
+                "delete": [
+                    "deleteBrands"
+                ],
+                "export": [],
+                "review": [
+                    "reviewBrand"
+                ],
+                "enable": [
+                    "enableBrand"
+                ]
+            },
+            "store": {
+                "display": [
+                    "storeDisplay"
+                ],
+                "create": [
+                    "createStore",
+                    "createBatchStore"
+                ],
+                "modify": [
+                    "updateStore"
+                ],
+                "delete": [],
+                "export": [],
+                "review": [],
+                "enable": []
+            },
+            "storeAccount": {
+                "display": [
+                    "brandStoreAccountDisplay"
+                ],
+                "create": [
+                    "createBrandStoreAccount",
+                    "quicklyCreateBrandStoreAccount"
+                ],
+                "modify": [
+                    "resetBrandStoreAccountPassword",
+                    "updateBrandStoreAccountStatus",
+                    "updateBrandStoreAccount"
+                ],
+                "delete": [],
+                "export": [],
+                "review": [],
+                "enable": []
+            },
+            "rolePermissions": {
+                "display": [
+                    "brandStoreAccountRolePermissionsDisplay"
+                ],
+                "create": [
+                    "createBrandStoreAccountRole"
+                ],
+                "modify": [
+                    "updateBrandStoreAccountRole"
+                ],
+                "delete": [],
+                "export": [],
+                "review": [],
+                "enable": []
+            }
+        },
+        "membershipLevelModule": {
+            "membershipLevel": {
+                "display": [
+                    "membershipLevelDisplay"
+                ],
+                "create": [
+                    "createLevel"
+                ],
+                "modify": [
+                    "updateLevel"
+                ],
+                "delete": [
+                    "deleteLevels"
+                ],
+                "export": [],
+                "review": [
+                    "reviewLevel"
+                ],
+                "enable": [
+                    "enableLevel"
+                ]
+            },
+            "membershipLevelRule": {
+                "display": [
+                    "membershipLevelRuleDisplay"
+                ],
+                "create": [
+                    "createRule"
+                ],
+                "modify": [
+                    "updateRule"
+                ],
+                "delete": [
+                    "deleteRules"
+                ],
+                "export": [],
+                "review": [
+                    "reviewRule"
+                ],
+                "enable": [
+                    "enableRule"
+                ]
+            },
+            "membershipLevelRecord": {
+                "display": [
+                    "membershipLevelRecordDisplay"
+                ],
+                "create": [],
+                "modify": [],
+                "delete": [],
+                "export": [
+                    "exportMembershipLevelRecord"
+                ],
+                "review": [],
+                "enable": []
+            }
+        },
+        "memberPointModule": {
+            "memberPointType": {
+                "display": [
+                    "memberPointTypeDisplay"
+                ],
+                "create": [
+                    "createPointType",
+                    "createThirdPartyPointType"
+                ],
+                "modify": [
+                    "updatePointType",
+                    "updateThirdPartyPointType"
+                ],
+                "delete": [
+                    "deletePointTypes",
+                    "deleteThirdPartyPointTypes"
+                ],
+                "export": [],
+                "review": [
+                    "reviewPointType"
+                ],
+                "enable": [
+                    "enablePointType"
+                ]
+            },
+            "memberRuleAllocation": {
+                "display": [
+                    "memberRuleAllocationDisplay"
+                ],
+                "create": [
+                    "createAllocationRule"
+                ],
+                "modify": [
+                    "updateAllocationRule"
+                ],
+                "delete": [
+                    "deleteAllocationRules"
+                ],
+                "export": [],
+                "review": [
+                    "reviewAllocationRule"
+                ],
+                "enable": [
+                    "enableAllocationRule"
+                ]
+            },
+            "memberRuleDeduction": {
+                "display": [
+                    "memberRuleDeductionDisplay"
+                ],
+                "create": [
+                    "createDeductionRule"
+                ],
+                "modify": [
+                    "updateDeductionRule"
+                ],
+                "delete": [
+                    "deleteDeductionRules"
+                ],
+                "export": [],
+                "review": [
+                    "reviewDeductionRule"
+                ],
+                "enable": [
+                    "enableDeductionRule"
+                ]
+            },
+            "memberPointTransactionRecord": {
+                "display": [
+                    "memberPointTransactionRecordDisplay"
+                ],
+                "create": [],
+                "modify": [],
+                "delete": [],
+                "export": [
+                    "exportMemberPointTransactionRecord",
+                    "exportMemberPointSummary"
+                ],
+                "review": [],
+                "enable": []
+            },
+            "memberPointExport": {
+                "display": [
+                    "memberPointExportDisplay"
+                ],
+                "create": [],
+                "modify": [],
+                "delete": [],
+                "export": [],
+                "review": [],
+                "enable": []
+            },
+            "memberPointExchangeRule": {
+                "display": [
+                    "searchMemberPointExchangeRule"
+                ],
+                "create": [
+                    "createMemberPointExchangeRule"
+                ],
+                "modify": [
+                    "updateMemberPointExchangeRule"
+                ],
+                "delete": [
+                    "deleteMemberPointExchangeRule"
+                ],
+                "export": [],
+                "review": [],
+                "enable": []
+            }
+        },
+        "memberTicketModule": {
+            "memberTicket": {
+                "display": [
+                    "memberTicketDisplay"
+                ],
+                "create": [
+                    "createTicket",
+                    "createIssuedTickets"
+                ],
+                "modify": [
+                    "updateTicket"
+                ],
+                "delete": [
+                    "deleteTickets"
+                ],
+                "export": [
+                    "exportIssuedTicket"
+                ],
+                "review": [
+                    "reviewTicket"
+                ],
+                "enable": [
+                    "enableTicket"
+                ]
+            },
+            "memberTicketRecord": {
+                "display": [
+                    "memberTicketRecordDisplay"
+                ],
+                "create": [],
+                "modify": [],
+                "delete": [],
+                "export": [
+                    "exportMemberTicketRecord"
+                ],
+                "review": [],
+                "enable": []
+            },
+            "memberTicketTransferRecord": {
+                "display": [
+                    "memberTicketTransferRecordDisplay"
+                ],
+                "create": [],
+                "modify": [],
+                "delete": [],
+                "export": [
+                    "exportMemberTicketTransferRecord"
+                ],
+                "review": [],
+                "enable": []
+            },
+            "memberTicketReport": {
+                "display": [
+                    "memberTicketRedeemRecordReportDisplay",
+                    "memberTicketRedeemDetailRecordReportDisplay"
+                ]
+            },
+            "voucher": {
+                "display": [
+                    "voucherDisplay",
+                    "voucherStatisticsDisplay"
+                ],
+                "create": [
+                    "createVoucher"
+                ],
+                "modify": [
+                    "updateVoucher"
+                ],
+                "delete": [
+                    "deleteVouchers"
+                ],
+                "export": [],
+                "review": [
+                    "reviewVoucher"
+                ],
+                "enable": [
+                    "enableVoucher"
+                ]
+            },
+            "voucherBox": {
+                "display": [
+                    "voucherBoxDisplay"
+                ],
+                "create": [
+                    "createVoucherBox"
+                ],
+                "modify": [
+                    "updateVoucherBox"
+                ],
+                "delete": [
+                    "deleteVoucherBoxes"
+                ],
+                "export": [],
+                "review": []
+            },
+            "issuedVoucherTransactionRecord": {
+                "display": [
+                    "issuedVoucherTransactionRecordDisplay"
+                ],
+                "create": [],
+                "modify": [],
+                "delete": [],
+                "export": [
+                    "exportIssuedVoucherTransactionRecord"
+                ],
+                "review": [],
+                "enable": []
+            },
+            "issuedVoucherTransferRecord": {
+                "display": [
+                    "issuedVoucherTransferRecordDisplay"
+                ],
+                "create": [],
+                "modify": [],
+                "delete": [],
+                "export": [
+                    "exportIssuedVoucherTransferRecord"
+                ],
+                "review": [],
+                "enable": []
+            },
+            "externalTicket": {
+                "display": [
+                    "externalTicketDisplay",
+                    "searchExternalTicket",
+                    "searchExternalTicketIssuedRecord"
+                ],
+                "create": [
+                    "createExternalTicket"
+                ],
+                "modify": [
+                    "updateExternalTicket"
+                ]
+            }
+        },
+        "memberCampaignModule": {
+            "memberCampaign": {
+                "display": [
+                    "memberCampaignDisplay"
+                ],
+                "create": [
+                    "createMemberCampaign"
+                ],
+                "modify": [
+                    "updateMemberCampaign",
+                    "triggerMemberCampaign"
+                ],
+                "delete": [
+                    "deleteMemberCampaigns"
+                ],
+                "export": [
+                    "exportMemberCampaignStatus"
+                ],
+                "review": [
+                    "reviewMemberCampaign"
+                ],
+                "enable": [
+                    "enableMemberCampaign"
+                ]
+            }
+        },
+        "memberModule": {
+            "member": {
+                "display": [
+                    "memberDisplay"
+                ],
+                "create": [],
+                "modify": [
+                    "updateMember",
+                    "deactivateMember",
+                    "lockMember",
+                    "unlockMember",
+                    "verifyUnverifiedMember",
+                    "setLevelForMember",
+                    "allocatePointsToMember",
+                    "deductPointsFromMember",
+                    "deductPointsFromMemberInExchangeForDiscount",
+                    "allocateMemberTickets",
+                    "updateIssuedTickets",
+                    "pickup",
+                    "unmaskProfile",
+                    "updateMemberMobile",
+                    "updateMemberPassword",
+                    "clearMemberSummaryCache"
+                ],
+                "delete": [],
+                "export": [
+                    "exportMember",
+                    "exportOneMemberLevelRecord",
+                    "exportOneMemberPointRecord",
+                    "exportOneMemberTicketRecord",
+                    "exportOneMemberTransactionRecord"
+                ],
+                "review": [],
+                "enable": []
+            },
+            "memberAttribute": {
+                "display": [
+                    "memberAttributeDisplay"
+                ],
+                "create": [],
+                "modify": [
+                    "updateMemberAttribute"
+                ],
+                "delete": [],
+                "export": [],
+                "review": [],
+                "enable": []
+            },
+            "memberBriefTerm": {
+                "display": [
+                    "memberBriefTermDisplay"
+                ],
+                "create": [
+                    "createBriefTerm",
+                    "createBriefTermContent"
+                ],
+                "modify": [
+                    "updateBriefTermContent"
+                ],
+                "delete": [
+                    "deleteBriefTerm",
+                    "deleteBriefTermContents"
+                ],
+                "export": [],
+                "review": [
+                    "reviewBriefTermContent"
+                ],
+                "enable": [
+                    "enableBriefTermContent"
+                ]
+            },
+            "memberSms": {
+                "display": [
+                    "memberSmsDisplay"
+                ],
+                "create": [],
+                "modify": [
+                    "getSMSVerificationCode"
+                ],
+                "delete": [],
+                "export": [],
+                "review": [],
+                "enable": []
+            },
+            "memberAdvancedFilter": {
+                "display": [
+                    "searchMemberAdvancedFilter",
+                    "findMemberAdvancedFilter"
+                ],
+                "create": [
+                    "createMemberAdvancedFilter"
+                ],
+                "modify": [],
+                "delete": [],
+                "export": [
+                    "exportMemberAdvancedFilter"
+                ],
+                "review": [],
+                "enable": []
+            },
+            "memberRecommendStats": {
+                "display": [
+                    "searchMemberRecommendStats"
+                ],
+                "create": [],
+                "modify": [],
+                "delete": [],
+                "export": [],
+                "review": [],
+                "enable": []
+            }
+        },
+        "memberListModule": {
+            "memberList": {
+                "display": [
+                    "memberListDisplay"
+                ],
+                "create": [
+                    "createMemberList",
+                    "createMemberListBatch"
+                ],
+                "modify": [],
+                "delete": [
+                    "deleteMemberLists",
+                    "deleteMemberListBatch"
+                ],
+                "export": [
+                    "exportMemberList"
+                ],
+                "review": [],
+                "enable": []
+            }
+        },
+        "pickupActivityModule": {
+            "pickupActivityCategory": {
+                "display": [
+                    "pickupActivityCategoryDisplay"
+                ],
+                "create": [
+                    "createPickupActivityCategory"
+                ],
+                "modify": [
+                    "updatePickupActivityCategory"
+                ],
+                "delete": [
+                    "deletePickupActivityCategories"
+                ],
+                "export": [],
+                "review": [],
+                "enable": []
+            },
+            "pickupActivity": {
+                "display": [
+                    "pickupActivityDisplay",
+                    "pickupActivityVoucherStatusDisplay"
+                ],
+                "create": [
+                    "createPickupActivity"
+                ],
+                "modify": [
+                    "updatePickupActivity"
+                ],
+                "delete": [
+                    "deletePickupActivities"
+                ],
+                "export": [
+                    "exportPickupCode"
+                ],
+                "review": [
+                    "reviewPickupActivity"
+                ],
+                "enable": [
+                    "enablePickupActivity"
+                ]
+            },
+            "pickupActivityRecord": {
+                "display": [
+                    "pickupActivityRecordDisplay"
+                ],
+                "create": [],
+                "modify": [],
+                "delete": [],
+                "export": [
+                    "exportPickupActivityRecord"
+                ],
+                "review": [],
+                "enable": []
+            },
+            "pickupActivityReport": {
+                "display": [
+                    "memberTicketIssueReportDisplay",
+                    "memberTicketIssueDetailReportDisplay"
+                ]
+            }
+        },
+        "cmsModule": {
+            "cms": {
+                "display": [
+                    "cmsDisplay",
+                    "cmsHomeFullPageAdDisplay",
+                    "cmsHomeCarouselAdDisplay",
+                    "cmsNewsDisplay",
+                    "cmsPromoDisplay",
+                    "cmsEdmDisplay",
+                    "cmsFaqDisplay",
+                    "cmsBookDisplay",
+                    "cmsProjectReserved1Display",
+                    "cmsHomeFullPageAdVideoUpload",
+                    "cmsHomeCarouselAdVideoUpload",
+                    "cmsNewsVideoUpload",
+                    "cmsPromoVideoUpload",
+                    "cmsEdmVideoUpload",
+                    "cmsFaqVideoUpload",
+                    "cmsProjectReserved1VideoUpload"
+                ],
+                "create": [
+                    "createCms"
+                ],
+                "modify": [
+                    "updateCms",
+                    "updateAgreeEnableReviewCms",
+                    "batchUpdateCmsWeight",
+                    "archiveCms"
+                ],
+                "delete": [
+                    "deleteCms"
+                ],
+                "export": [],
+                "review": [
+                    "reviewCms"
+                ],
+                "enable": [
+                    "enableCms"
+                ]
+            },
+            "cmsCategory": {
+                "display": [
+                    "cmsNewsCategoryDisplay",
+                    "cmsPromoCategoryDisplay"
+                ],
+                "create": [
+                    "createCmsCategory"
+                ],
+                "modify": [
+                    "updateCmsCategory"
+                ],
+                "delete": [
+                    "deleteCmsCategories"
+                ],
+                "export": [],
+                "review": [],
+                "enable": []
+            },
+            "linkBlockDeepLinkScheme": {
+                "display": [
+                    "linkBlockDeepLinkSchemeDisplay",
+                    "linkBlockDeepLinkSchemeGenerateDisplay"
+                ],
+                "create": [
+                    "createDeepLinkScheme"
+                ],
+                "modify": [
+                    "updateDeepLinkScheme"
+                ],
+                "delete": [],
+                "export": [],
+                "review": [],
+                "enable": []
+            }
+        },
+        "productModule": {
+            "product": {
+                "display": [
+                    "productDisplay"
+                ],
+                "create": [
+                    "createProduct",
+                    "createCategory"
+                ],
+                "modify": [
+                    "updateProduct",
+                    "updateCategory"
+                ],
+                "delete": [
+                    "deleteProducts",
+                    "deleteCategories"
+                ],
+                "export": [],
+                "review": [],
+                "enable": []
+            },
+            "ProductBatch": {
+                "display": [
+                    "searchProductBatches",
+                    "searchProductBatchCodes"
+                ],
+                "create": [
+                    "createProductBatch"
+                ],
+                "modify": [
+                    "updateProductBatch"
+                ],
+                "delete": [
+                    "invalidProductBatches"
+                ],
+                "export": [
+                    "exportProductBatchCodes"
+                ],
+                "review": [
+                    "reviewProductBatch"
+                ],
+                "enable": [
+                    "enableProductBatch"
+                ]
+            }
+        },
+        "codeGeneratorModule": {
+            "codeGenerator": {
+                "display": [
+                    "codeGeneratorDisplay"
+                ],
+                "create": [
+                    "createCodeGenerator"
+                ],
+                "modify": [
+                    "updateCodeGenerator"
+                ],
+                "delete": [
+                    "deleteCodeGenerators"
+                ],
+                "export": [],
+                "review": [
+                    "reviewCodeGenerators"
+                ],
+                "enable": [
+                    "enableCodeGenerators"
+                ]
+            },
+            "externalCodeGenerator": {
+                "display": [
+                    "externalCodeGeneratorDisplay"
+                ],
+                "create": [
+                    "createExternalCodeGenerator"
+                ],
+                "modify": [
+                    "updateExternalCodeGenerator",
+                    "updateExternalCodeGeneratorsBrandFields"
+                ],
+                "delete": [
+                    "deleteExternalCodeGenerators"
+                ],
+                "export": [],
+                "review": [],
+                "enable": []
+            },
+            "externalCodeGeneratorOrder": {
+                "display": [
+                    "externalCodeGeneratorOrderDisplay"
+                ],
+                "create": [],
+                "modify": [],
+                "delete": [],
+                "export": [],
+                "review": [],
+                "enable": []
+            }
+        },
+        "menuModule": {
+            "menu": {
+                "display": [
+                    "menuDisplay"
+                ],
+                "create": [
+                    "createMenu",
+                    "createMenuProduct"
+                ],
+                "modify": [
+                    "updateMenu",
+                    "updateMenuProduct"
+                ],
+                "delete": [
+                    "deleteMenus",
+                    "deleteMenuProducts"
+                ],
+                "export": [],
+                "review": [
+                    "reviewMenu"
+                ],
+                "enable": [
+                    "enableMenu"
+                ]
+            }
+        },
+        "memberCardModule": {
+            "memberCard": {
+                "display": [
+                    "memberCardDisplay"
+                ],
+                "create": [
+                    "createMemberCardType",
+                    "createIssuedMemberCard"
+                ],
+                "modify": [
+                    "updateMemberCardType",
+                    "updateIssuedMemberCardBatch",
+                    "updateIssuedMemberCards"
+                ],
+                "delete": [
+                    "deleteMemberCardTypes"
+                ],
+                "export": [
+                    "exportMemberCard"
+                ],
+                "review": [
+                    "reviewMemberCardTypes"
+                ],
+                "enable": [
+                    "enableMemberCardTypes"
+                ]
+            },
+            "memberCardRecord": {
+                "display": [
+                    "memberCardRecordDisplay"
+                ],
+                "create": [],
+                "modify": [],
+                "delete": [],
+                "export": [
+                    "exportMemberCardRecord"
+                ],
+                "review": [],
+                "enable": []
+            }
+        },
+        "pushInboxModule": {
+            "pushInbox": {
+                "display": [
+                    "pushInboxDisplay"
+                ],
+                "create": [
+                    "createInboxMessage"
+                ],
+                "modify": [
+                    "updateInboxMessage",
+                    "stopBatchPushTask"
+                ],
+                "delete": [
+                    "deleteInboxMessages"
+                ],
+                "export": [],
+                "review": [
+                    "reviewInboxMessages"
+                ],
+                "enable": [
+                    "enableInboxMessages"
+                ]
+            },
+            "lineInbox": {
+                "display": [
+                    "InboxLineMessageDisplay",
+                    "findInboxLineMessage"
+                ],
+                "create": [
+                    "createInboxLineMessage"
+                ],
+                "modify": [
+                    "updateInboxLineMessage",
+                    "stopBatchLinePushTask",
+                    "archiveInboxLineMessage"
+                ],
+                "delete": [
+                    "deleteInboxLineMessages"
+                ],
+                "export": [],
+                "review": [
+                    "reviewInboxLineMessages"
+                ],
+                "enable": [
+                    "enableInboxLineMessages"
+                ]
+            }
+        },
+        "memberFilterModule": {
+            "memberFilter": {
+                "display": [
+                    "memberFilterDisplay"
+                ],
+                "create": [
+                    "createMemberFilter"
+                ],
+                "modify": [
+                    "updateMemberFilter",
+                    "triggerMemberFilter"
+                ],
+                "delete": [
+                    "deleteMemberFilters"
+                ],
+                "export": [],
+                "review": [
+                    "reviewMemberFilters"
+                ],
+                "enable": [
+                    "enableMemberFilters"
+                ]
+            },
+            "memberTagFilter": {
+                "display": [
+                    "memberTagFilterDisplay",
+                    "findMemberTagFilter"
+                ],
+                "create": [
+                    "createMemberTagFilter"
+                ],
+                "modify": [
+                    "updateMemberTagFilter",
+                    "triggerMemberTagFilter"
+                ],
+                "delete": [
+                    "deleteMemberTagFilters"
+                ],
+                "export": [],
+                "review": [],
+                "enable": []
+            }
+        },
+        "synchronizedUploadTransactionModule": {
+            "synchronizedUploadTransaction": {
+                "display": [
+                    "synchronizedUploadTransactionDisplay"
+                ]
+            }
+        },
+        "paymentModule": {
+            "paymentItem": {
+                "display": [
+                    "paymentItemDisplay"
+                ],
+                "create": [
+                    "createPaymentItem"
+                ],
+                "modify": [
+                    "updatePaymentItem"
+                ]
+            },
+            "paymentServiceProvider": {
+                "display": [
+                    "paymentServiceDisplay"
+                ],
+                "create": [
+                    "createPaymentService"
+                ],
+                "modify": [
+                    "updatePaymentService",
+                    "updatePaymentServiceProviderStoreFields"
+                ]
+            },
+            "payment": {
+                "display": [
+                    "paymentDisplay"
+                ],
+                "refund": [
+                    "refundPayment",
+                    "manuallyRefundPayment",
+                    "rejectRefundPayment",
+                    "partiallyRefundPayment"
+                ],
+                "redeem": [
+                    "redeemPayment"
+                ]
+            },
+            "paymentTaskRecord": {
+                "display": [
+                    "paymentTaskRecordDisplay"
+                ]
+            },
+            "paymentRedeemRecord": {
+                "display": [
+                    "paymentRedeemRecordDisplay"
+                ]
+            }
+        },
+        "relayModule": {
+            "relayItem": {
+                "display": [
+                    "relayItemDisplay"
+                ],
+                "create": [
+                    "createRelayItem",
+                    "createRelayItemApi"
+                ],
+                "modify": [
+                    "updateRelayItem",
+                    "updateRelayItemApi"
+                ],
+                "delete": [
+                    "deleteRelayItems",
+                    "deleteRelayItemApis"
+                ]
+            }
+        },
+        "mobileAppConfigurationModule": {
+            "mobileAppConfiguration": {
+                "display": [
+                    "mobileAppConfigurationDisplay",
+                    "mobileAppCopywritingDisplay"
+                ],
+                "create": [
+                    "createMobileAppConfiguration",
+                    "createMobileAppCopywriting"
+                ],
+                "modify": [
+                    "updateMobileAppConfiguration",
+                    "updateMobileAppCopywriting"
+                ],
+                "delete": []
+            }
+        },
+        "clientAppKeyModule": {
+            "clientAppKey": {
+                "display": [
+                    "clientAppKeyDisplay"
+                ],
+                "create": [
+                    "createClientAppKey"
+                ],
+                "modify": [
+                    "updateClientAppKey",
+                    "updateClientAppKeyEnable"
+                ]
+            }
+        },
+        "missionModule": {
+            "missionCategory": {
+                "display": [
+                    "missionCategoryDisplay"
+                ],
+                "create": [
+                    "createMissionCategory"
+                ],
+                "modify": [
+                    "updateMissionCategory"
+                ],
+                "delete": [
+                    "deleteMissionCategories"
+                ],
+                "export": [],
+                "review": [],
+                "enable": []
+            },
+            "mission": {
+                "display": [
+                    "missionDisplay"
+                ],
+                "create": [
+                    "createMission"
+                ],
+                "modify": [
+                    "updateMission"
+                ],
+                "delete": [
+                    "deleteMissions"
+                ],
+                "review": [
+                    "reviewMission"
+                ],
+                "enable": [
+                    "enableMission"
+                ]
+            },
+            "externalSubMissionType": {
+                "display": [
+                    "externalSubMissionTypesDisplay"
+                ],
+                "create": [
+                    "createExternalSubMissionType"
+                ],
+                "modify": [
+                    "updateExternalSubMissionType"
+                ],
+                "delete": [
+                    "deleteExternalSubMissionTypes"
+                ]
+            },
+            "missionTransactionRecord": {
+                "display": [
+                    "missionTransactionRecordDisplay"
+                ],
+                "create": [],
+                "modify": [],
+                "delete": [],
+                "export": [],
+                "review": [],
+                "enable": []
+            },
+            "milestoneRewardTransactionRecord": {
+                "display": [
+                    "milestoneRewardTransactionRecordDisplay"
+                ],
+                "create": [],
+                "modify": [],
+                "delete": [],
+                "export": [],
+                "review": [],
+                "enable": []
+            },
+            "subMissionTransactionRecord": {
+                "display": [
+                    "subMissionTransactionRecordDisplay"
+                ],
+                "create": [],
+                "modify": [],
+                "delete": [],
+                "export": [],
+                "review": [],
+                "enable": []
+            },
+            "missionReport": {
+                "display": [
+                    "getMilestoneSubMissionTransactionRecordReports",
+                    "getMissionProgressStatistic"
+                ]
+            }
+        },
+        "eventNotificationModule": {
+            "eventNotification": {
+                "display": [
+                    "eventNotificationDisplay"
+                ],
+                "create": [
+                    "createEventNotification"
+                ],
+                "modify": [
+                    "updateEventNotification"
+                ],
+                "delete": [
+                    "deleteEventNotifications"
+                ],
+                "export": [],
+                "review": [
+                    "reviewEventNotification"
+                ],
+                "enable": [
+                    "enableEventNotification"
+                ]
+            },
+            "notificationConfiguration": {
+                "display": [
+                    "notificationConfigurationDisplay"
+                ]
+            },
+            "eventNotificationTask": {
+                "display": [
+                    "eventNotificationTaskDisplay",
+                    "brandStoreAccountEventNotificationTaskDisplay"
+                ],
+                "modify": [
+                    "unmaskEventNotificationContent"
+                ]
+            }
+        },
+        "tagModule": {
+            "tag": {
+                "display": [
+                    "tagDisplay"
+                ],
+                "create": [
+                    "createTag",
+                    "addMemberToTagMemberList",
+                    "addMemberListToTagMemberList"
+                ],
+                "modify": [
+                    "updateTag"
+                ],
+                "delete": [
+                    "deleteTags",
+                    "deleteTagMemberListBatchRows",
+                    "deleteMembersFromMemberList"
+                ],
+                "export": [
+                    "exportTagMemberList"
+                ],
+                "review": [],
+                "enable": []
+            }
+        },
+        "saleModule": {
+            "saleActivity": {
+                "display": [
+                    "saleActivityDisplay"
+                ],
+                "create": [
+                    "createSaleActivity"
+                ],
+                "modify": [
+                    "updateSaleActivity"
+                ],
+                "delete": [
+                    "deleteSaleActivities"
+                ],
+                "review": [],
+                "enable": []
+            },
+            "saleActivityCategory": {
+                "display": [
+                    "saleActivityCategoryDisplay"
+                ],
+                "create": [
+                    "createSaleActivityCategory"
+                ],
+                "modify": [
+                    "updateSaleActivityCategory"
+                ],
+                "delete": [
+                    "deleteSaleActivityCategories"
+                ],
+                "review": [],
+                "enable": []
+            },
+            "saleActivityConfiguration": {
+                "display": [
+                    "saleActivityConfigurationDisplay"
+                ],
+                "create": [],
+                "modify": [
+                    "updateSaleActivityHandlingFeeConfiguration",
+                    "updateSaleActivityReceiptConfiguration"
+                ],
+                "delete": [],
+                "review": [],
+                "enable": []
+            },
+            "voucherSaleActivityOrder": {
+                "display": [
+                    "voucherSaleActivityOrderDisplay"
+                ],
+                "create": [],
+                "modify": [
+                    "issueVouchersByVoucherSaleActivityOrder",
+                    "voucherSaleActivityOrderRefund",
+                    "voucherSaleActivityOrderRefundByManually",
+                    "voucherSaleActivityOrderPartiallyRefund",
+                    "voucherSaleActivityOrderRejectRefundApplication",
+                    "voucherSaleActivityOrderIssueCredit",
+                    "voucherSaleActivityOrderInvalidateReceipt"
+                ],
+                "delete": [],
+                "review": [],
+                "enable": []
+            }
+        },
+        "receiptModule": {
+            "receiptTool": {
+                "display": [
+                    "receiptToolDisplay"
+                ],
+                "create": [
+                    "createReceiptTool"
+                ],
+                "modify": [
+                    "updateReceiptTool"
+                ],
+                "delete": [],
+                "export": [],
+                "review": [],
+                "enable": []
+            },
+            "receipt": {
+                "display": [
+                    "receiptDisplay"
+                ],
+                "create": [],
+                "modify": [
+                    "updateReceiptIfInit",
+                    "updateReceiptIfInvalidationInit",
+                    "issueReceiptIfUnprocessedOrFailed"
+                ],
+                "delete": [],
+                "export": [
+                    "exportReceipt"
+                ],
+                "review": [],
+                "enable": []
+            },
+            "credit": {
+                "display": [
+                    "creditDisplay"
+                ],
+                "create": [],
+                "modify": [
+                    "updateCreditIfInit"
+                ],
+                "delete": [],
+                "export": [
+                    "exportCredit"
+                ],
+                "review": [],
+                "enable": []
+            }
+        },
+        "subscriptionModule": {
+            "subscription": {
+                "display": [
+                    "subscriptionActivityDisplay"
+                ],
+                "create": [
+                    "createSubscriptionActivity",
+                    "createSubscriptionProgramAndPrivilege"
+                ],
+                "modify": [
+                    "updateSubscriptionActivity",
+                    "updateSubscriptionProgramAndPrivilege"
+                ],
+                "delete": [
+                    "deleteActivities",
+                    "deleteSubscriptionProgramAndPrivileges"
+                ],
+                "export": [],
+                "review": [
+                    "reviewSubscriptionProgram"
+                ],
+                "enable": [
+                    "enableSubscriptionProgram"
+                ]
+            },
+            "subscriptionProgramContract": {
+                "display": [
+                    "subscriptionProgramContractDisplay",
+                    "subscriptionProgramContractOrderDisplay"
+                ],
+                "create": [],
+                "modify": [
+                    "subscriptionProgramContractOrderRefundByManually",
+                    "subscriptionProgramContractOrderIssueCredit",
+                    "subscriptionProgramContractOrderInvalidateReceipt"
+                ],
+                "delete": [],
+                "export": [],
+                "review": [],
+                "enable": []
+            },
+            "subscriptionConfiguration": {
+                "display": [
+                    "subscriptionConfigurationDisplay"
+                ],
+                "create": [],
+                "modify": [
+                    "updateSubscriptionHandlingFeeConfiguration",
+                    "updateSubscriptionReceiptConfiguration",
+                    "updateSubscriptionRenewalConfiguration"
+                ],
+                "delete": [],
+                "export": [],
+                "review": [],
+                "enable": []
+            }
+        },
+        "shopModule": {
+            "menu": {
+                "display": [
+                    "shopMenuDisplay"
+                ],
+                "create": [
+                    "createShopMenu",
+                    "createShopMenuShopMerchandises",
+                    "createAdditionalShopMerchandise",
+                    "copyShopMenu"
+                ],
+                "modify": [
+                    "updateShopMenu",
+                    "updateShopCategories"
+                ],
+                "delete": [
+                    "deleteShopMenus",
+                    "deleteShopMenuShopMerchandises",
+                    "deleteAdditionalMerchandises"
+                ],
+                "export": [],
+                "review": [],
+                "enable": []
+            },
+            "merchandise": {
+                "display": [
+                    "merchandiseDisplay"
+                ],
+                "create": [
+                    "createShopMerchandise"
+                ],
+                "modify": [
+                    "updateShopMerchandise"
+                ],
+                "delete": [
+                    "deleteShopMerchandises"
+                ],
+                "export": [],
+                "review": [
+                    "reviewShopMerchandise"
+                ],
+                "enable": [
+                    "enableShopMerchandise"
+                ]
+            },
+            "merchandiseItem": {
+                "display": [
+                    "merchandiseItemDisplay"
+                ],
+                "create": [
+                    "createShopMerchandiseItem"
+                ],
+                "modify": [
+                    "updateShopMerchandiseItem"
+                ],
+                "delete": [
+                    "deleteShopMerchandiseItems"
+                ],
+                "export": [],
+                "review": [
+                    "reviewShopMerchandiseItem"
+                ],
+                "enable": [
+                    "enableShopMerchandiseItem"
+                ]
+            },
+            "merchandiseSpec": {
+                "display": [
+                    "shopMerchandiseSpecDisplay"
+                ],
+                "create": [
+                    "createShopMerchandiseSpec"
+                ],
+                "modify": [
+                    "updateShopMerchandiseSpec"
+                ],
+                "delete": [
+                    "deleteShopMerchandiseSpecs"
+                ],
+                "export": [],
+                "review": [
+                    "reviewShopMerchandiseSpec"
+                ],
+                "enable": [
+                    "enableShopMerchandiseSpec"
+                ]
+            },
+            "merchandiseCategory": {
+                "display": [
+                    "shopMerchandiseCategoryDisplay"
+                ],
+                "create": [],
+                "modify": [
+                    "updateShopMerchandiseCategory"
+                ],
+                "delete": [
+                    "deleteShopMerchandiseCategories"
+                ],
+                "export": [],
+                "review": [],
+                "enable": []
+            },
+            "shopConfiguration": {
+                "display": [
+                    "shopConfigurationDisplay"
+                ],
+                "create": [],
+                "modify": [
+                    "updateShopMainConfiguration"
+                ],
+                "delete": [],
+                "review": [],
+                "enable": []
+            },
+            "shopBrandConfiguration": {
+                "display": [
+                    "shopBrandConfigurationDisplay"
+                ],
+                "create": [
+                    "createShopBrandConfiguration"
+                ],
+                "modify": [
+                    "updateShopBrandConfiguration"
+                ],
+                "delete": [],
+                "review": [],
+                "enable": []
+            },
+            "shopOrder": {
+                "display": [
+                    "shopOrderDisplay"
+                ],
+                "create": [],
+                "modify": [
+                    "shopOrderRefund",
+                    "shopOrderRefundByManually",
+                    "shopOrderPartiallyRefund",
+                    "shopOrderRetryRefund"
+                ],
+                "delete": [],
+                "review": [],
+                "enable": []
+            },
+            "shopOrderExtraColumnKey": {
+                "display": [
+                    "shopOrderExtraColumnKeyDisplay"
+                ],
+                "create": [
+                    "createShopOrderExtraColumnKey"
+                ],
+                "modify": [
+                    "updateShopOrderExtraColumnKey"
+                ],
+                "delete": [
+                    "deleteShopOrderExtraColumnKey"
+                ],
+                "review": [],
+                "enable": []
+            },
+            "pointDiscountRule": {
+                "display": [
+                    "pointDiscountRuleDisplay"
+                ],
+                "create": [
+                    "createShopPointDiscountRule"
+                ],
+                "modify": [],
+                "delete": [
+                    "deleteShopPointDiscountRules"
+                ],
+                "review": [],
+                "enable": []
+            },
+            "shopScheduledPromotionalActivity": {
+                "display": [
+                    "getShopScheduledPromotionalActivity",
+                    "searchShopScheduledPromotionalActivities"
+                ],
+                "create": [
+                    "createShopScheduledPromotionalActivity"
+                ],
+                "modify": [
+                    "updateShopScheduledPromotionalActivity"
+                ],
+                "delete": [
+                    "deleteShopScheduledPromotionalActivities"
+                ],
+                "review": [],
+                "enable": []
+            },
+            "shopMemberTicketPromotionalActivity": {
+                "display": [
+                    "getShopMemberTicketPromotionalActivity",
+                    "searchShopMemberTicketPromotionalActivities"
+                ],
+                "create": [
+                    "createShopMemberTicketPromotionalActivity"
+                ],
+                "modify": [
+                    "updateShopMemberTicketPromotionalActivity"
+                ],
+                "delete": [
+                    "deleteShopMemberTicketPromotionalActivities"
+                ],
+                "review": [],
+                "enable": []
+            },
+            "saleLimits": {
+                "display": [
+                    "getShopMerchandiseSaleLimit",
+                    "searchShopMerchandiseSaleLimits"
+                ],
+                "create": [
+                    "createShopMerchandiseSaleLimit"
+                ],
+                "modify": [
+                    "updateShopMerchandiseSaleLimit"
+                ],
+                "delete": [
+                    "deleteShopMerchandiseSaleLimits"
+                ],
+                "review": [],
+                "enable": []
+            },
+            "storeConfigurationSetting": {
+                "display": [
+                    "storeConfigurationSettingDisplay"
+                ],
+                "create": [
+                    "createShopStoreHolidayServiceSetting",
+                    "createShopStoreSuspendServiceSetting"
+                ],
+                "modify": [
+                    "updateShopWeekdayServiceSetting",
+                    "updateShopStoreHolidayServiceSetting",
+                    "updateShopStoreSuspendServiceSetting",
+                    "updateShopStoreTodayServiceStatus",
+                    "updateShopStoreReplenishTimeServiceSetting",
+                    "updateShopStoreOverMinutesServiceSetting",
+                    "updateShopStoreMerchandisesAvailableStatusSettings",
+                    "updateShopStoreMerchandiseItemsStockStatus",
+                    "updateShopStoreMerchandiseItemSpecOptionsStockStatus"
+                ],
+                "delete": [
+                    "deleteShopStoreHolidayServiceSettings",
+                    "deleteShopStoreSuspendServiceSetting"
+                ],
+                "review": [],
+                "enable": []
+            }
+        },
+        "thirdPartyModule": {
+            "thirdParty": {
+                "display": [
+                    "thirdPartyDisplay"
+                ]
+            }
+        },
+        "logisticModule": {
+            "tool": {
+                "display": [
+                    "logisticToolDisplay"
+                ],
+                "create": [
+                    "createLogisticTool"
+                ],
+                "modify": [
+                    "updateLogisticTool"
+                ],
+                "delete": [
+                    "deleteLogisticTool"
+                ],
+                "export": [],
+                "review": [],
+                "enable": []
+            },
+            "order": {
+                "display": [
+                    "logisticOrderDisplay"
+                ],
+                "create": [],
+                "modify": [],
+                "delete": [],
+                "export": [],
+                "review": [],
+                "enable": []
+            }
+        },
+        "homeDeliveryOrderModule": {
+            "order": {
+                "display": [
+                    "homeDeliveryOrderDisplay"
+                ],
+                "create": [],
+                "modify": [
+                    "updateHomeDeliveryOrder"
+                ],
+                "delete": []
+            }
+        },
+        "regularCustomerModule": {
+            "board": {
+                "modify": [
+                    "updateBoardsByMappingCode"
+                ]
+            },
+            "order": {
+                "display": [
+                    "regularCustomerOrderDisplay"
+                ],
+                "create": [],
+                "modify": [
+                    "refundRegularCustomerOrder",
+                    "retryRefundRegularCustomerOrder",
+                    "refundManuallyRegularCustomerOrder"
+                ],
+                "delete": []
+            },
+            "configuration": {
+                "display": [
+                    "regularCustomerConfigurationDisplay"
+                ],
+                "create": [],
+                "modify": [
+                    "updateRegularCustomerReceiptConfiguration"
+                ],
+                "delete": []
+            }
+        },
+        "externalLinkConfigModule": {
+            "webhookConfig": {
+                "display": [
+                    "searchWebhookConfigs",
+                    "findWebhookConfig"
+                ],
+                "create": [
+                    "createWebhookConfig"
+                ],
+                "modify": [
+                    "updateWebhookConfig"
+                ],
+                "delete": [
+                    "deleteWebhookConfigs"
+                ],
+                "retry": [
+                    "retrySendWebhook"
+                ]
+            }
+        },
+        "thirdPartyOrderModule": {
+            "order": {
+                "display": [
+                    "searchThirdPartyOrder",
+                    "searchThirdPartyOrderTransaction"
+                ],
+                "modify": [
+                    "refundThirdPartyOrder"
+                ]
+            }
+        },
+        "dashboard": {
+            "dashboard": {
+                "display": [
+                    "memberDashboard",
+                    "memberTransactionDashboard",
+                    "memberTransactionModelDashboard"
+                ]
+            }
+        }
+    }
+}

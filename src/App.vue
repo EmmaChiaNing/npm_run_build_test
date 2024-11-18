@@ -12,6 +12,8 @@ import { RouterLink, RouterView } from 'vue-router';
         <RouterLink to="/gridAndFlex">GridAndFlex</RouterLink>
         <RouterLink to="/webView">WebView</RouterLink>
         <RouterLink to="/vue">Vue</RouterLink>
+        <RouterLink to="/permission">MMRM Permission</RouterLink>
+        <RouterLink to="/financialInstitution">金融機構代碼</RouterLink>
       </nav>
     </div>
   </header>
