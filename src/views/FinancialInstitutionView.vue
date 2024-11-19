@@ -1,66 +1,49 @@
 <template>
-    <select v-model="bankId.value" @change="selectBankData" autocomplete="on">
-        <option v-for="(item, index) in financialInstitution" :key="index" :value="item.value" :data-name="item.label">{{item.value}} {{item.label}}</option>
-    </select>
-    <p class="mt-1" v-if="bankId.value">銀行代碼：{{ bankId }}</p>
-    <input class="mt-2" type="text" id="searchInput" placeholder="Search..." v-model="keyword">
-    <button @click="highlightText">Search</button>
-    <ul ref="bankListContainer">
-        <li v-for="(item, index) in bankList" :key="index">{{item.value}} {{item.label}}</li>
-    </ul>
-</template>
+    <div class="container">
+      <div class="home">
+        <input type="text" v-model="inputValue" @input="searchKey" />
+        <ul ref="bankListContainer">
+            <li v-for="(item, index) in bankIdList" :key="index">
+                <span v-html="item.value"></span>
+                <span v-html="item.label"></span>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </template>
+  
+  <script setup>
+  import { ref } from "vue";
+  import financialInstitution from '@/data/financialInstitution.json';
 
-<script setup>
-import { nextTick, onMounted, ref } from 'vue';
-import financialInstitution from '@/data/financialInstitution.json';
+  const inputValue = ref("");
 
-const bankId = ref({
-    value: null
-});
+    const searchKey = (e) => {
+        const searchValue = e.target.value.trim();
+        const reg = new RegExp(searchValue, "gi");
 
-const keyword = ref('')
-const bankListContainer = ref(null)
-const bankList = ref([])
-const initialFilteredContent = ref(null)
+        // 如果 input 值為空時，重置為原始清單
+        if (!searchValue) {
+            bankIdList.value = [...financialInstitution];
+            return;
+        }
 
-const selectBankData = (e) => {
-    const selectItem = financialInstitution.find((bank) => bank.value === e.target.value)
-    bankId.value = selectItem;
-}
+        inputValue.value = searchValue;
+        bankIdList.value = financialInstitution.map((item) => {
+            // 建立新物件，避免直接修改原始資料
+            const highlightedItem = {
+            ...item,
+            value: item.value.replace(reg, (match) => `<span style="color: red">${match}</span>`),
+            label: item.label.replace(reg, (match) => `<span style="color: red">${match}</span>`),
+            };
 
-const highlightText = () => {
-    if (keyword.value !== '') {
-        const searchValue = keyword.value.trim();
-        // filter highlight span tag
-        // const filteredContent = content.replace(/<span class="fg-attention">(.*?)<\/span>/gi, '$1');
-        bankList.value = financialInstitution.filter((str) =>  { return str.value.includes(searchValue) || str.label.includes(searchValue) });
-        const content = bankListContainer.value;
-    
-        nextTick(() => {
-            const filteredContent = content.innerHTML.replace(/<span class="fg-attention">(.*?)<\/span>/gi, '$1');
-    
-                const highlightedContent = filteredContent.replace(new RegExp(searchValue, 'gi'), '<span class="fg-attention">$&</span>');
-                bankListContainer.value.innerHTML = highlightedContent;
-    
-            // bankList.value = financialInstitution
-            // console.log("🚀 ~ nextTick ~ financialInstitution:", financialInstitution)
-            // bankListContainer.value.innerHTML = filteredContent;
-            // console.log("🚀 ~ nextTick ~ filteredContent:", filteredContent)
-        })
-    } else {
-        bankList.value = financialInstitution;
-        
-    }
-}
-
-onMounted(() => {
-    bankList.value = financialInstitution;
-})
+            // 篩選符合條件的項目
+            return (
+                item.value.includes(searchValue) || item.label.includes(searchValue)
+            ) ? highlightedItem : null;
+        }).filter(Boolean); // 移除不符合條件的項目 (過濾掉 null)
+    };
 
 
-defineOptions({
-    name: 'FinancialInstitutionView'
-})
+  const bankIdList = ref(financialInstitution);
 </script>
-
-
