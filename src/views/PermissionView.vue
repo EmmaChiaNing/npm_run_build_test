@@ -9,12 +9,10 @@
 			<h2>{{ permissionModule.moduleName }}</h2>
 			<fieldset v-for="(permissionItem, permissionName) in permissionModule.permissions" :key="permissionName">
 				<legend>{{ permissionName }}</legend>
-				<div class="flex wrap">
-					<div :class="{'width': permissionIndex === 0}" class="mr-1"  v-for="(permission, permissionIndex) in permissionItem">
-						<label >
-							<input type="checkbox"  :value="permission.name" :checked="permission.checked">
-							{{ permission.name }}
-						</label>
+				<div class="checkboxes-grid">
+					<div :class="{'width': permissionIndex === 0}" class="checkboxes-item"  v-for="(permission, permissionIndex) in permissionItem">
+						<input type="checkbox" :id="permission.name"  :value="permission.name" :checked="permission.checked">
+						<label :for="permission.name">{{ permission.name }}</label>
 					</div>
 				</div>
 			</fieldset>
@@ -71,3 +69,28 @@ defineOptions({
     name: 'PermissionView'
 })
 </script>
+
+<style lang="css" scoped>
+.checkboxes-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  gap: 1rem;
+}
+.checkboxes-item {
+  display: flex;
+  gap: 5px;
+}
+.checkboxes-grid label {
+  word-break: break-all;
+  line-height: 1rem;
+  flex-shrink: 1;
+  cursor: pointer;
+}
+.checkboxes-grid input {
+  height: 1rem;
+  width: 1rem;
+  flex-shrink: 0;
+}
+</style>
