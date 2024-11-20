@@ -1,49 +1,43 @@
 <template>
-    <div class="container">
-      <div class="home">
-        <input type="text" v-model="inputValue" @input="searchKey" />
-        <ul ref="bankListContainer">
-            <li v-for="(item, index) in bankIdList" :key="index">
-                <span v-html="item.value"></span>
-                <span v-html="item.label"></span>
-            </li>
-        </ul>
-      </div>
-    </div>
-  </template>
+	<div class="container">
+		<BankField 
+			:bank-field-value="bankFieldValue" 
+			:is-search-box-visible="isSearchBoxVisible" 
+			:is-error="isError"
+			@handler-search-box-visible="handlerSearchBoxVisible"
+		/>
+		<SearchBox 
+			v-model:isSearchBoxVisible="isSearchBoxVisible" 
+			@change-bank-field-value="changeBankFieldValue"
+		/>
+		<button @click="onSubmit">Submit</button>
+	</div>
+</template>
   
-  <script setup>
-  import { ref } from "vue";
-  import financialInstitution from '@/data/financialInstitution.json';
+<script setup>
+import { ref } from "vue";
+import BankField from "@/components/financialInstitution/BankField.vue";
+import SearchBox from "@/components/financialInstitution/SearchBox.vue";
 
-  const inputValue = ref("");
+const bankFieldValue = ref("請選擇匯款銀行代碼");
+const isSearchBoxVisible = ref(false);
+const isError = ref(false);
 
-    const searchKey = (e) => {
-        const searchValue = e.target.value.trim();
-        const reg = new RegExp(searchValue, "gi");
+const handlerSearchBoxVisible = () => {
+	isSearchBoxVisible.value = !isSearchBoxVisible.value
+}
 
-        // 如果 input 值為空時，重置為原始清單
-        if (!searchValue) {
-            bankIdList.value = [...financialInstitution];
-            return;
-        }
+const changeBankFieldValue = (val) => {
+	bankFieldValue.value = val
+	isError.value = false;
+}
 
-        inputValue.value = searchValue;
-        bankIdList.value = financialInstitution.map((item) => {
-            // 建立新物件，避免直接修改原始資料
-            const highlightedItem = {
-            ...item,
-            value: item.value.replace(reg, (match) => `<span style="color: red">${match}</span>`),
-            label: item.label.replace(reg, (match) => `<span style="color: red">${match}</span>`),
-            };
-
-            // 篩選符合條件的項目
-            return (
-                item.value.includes(searchValue) || item.label.includes(searchValue)
-            ) ? highlightedItem : null;
-        }).filter(Boolean); // 移除不符合條件的項目 (過濾掉 null)
-    };
-
-
-  const bankIdList = ref(financialInstitution);
+const onSubmit = () => {
+	console.log("🚀 ~ onSubmit ~ bankFieldValue.value:", bankFieldValue.value)
+	if (!bankFieldValue.value || bankFieldValue.value === "請選擇匯款銀行代碼") {
+		isError.value = true;
+	} else {
+		isError.value = false;
+	}
+}
 </script>
