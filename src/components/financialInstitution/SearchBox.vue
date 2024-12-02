@@ -55,8 +55,8 @@ const addKeywordHighlight = (bankList) => {
 		const { value, label } = current;
 		// 建立新物件，避免直接修改原始資料
 		prev.push({
-				value: value.replace(reg, `<span class="fg-attention">$&</span>`),
-        label: label.replace(reg, `<span class="fg-attention">$&</span>`),
+			value: value.replace(reg, `<span class="fg-attention">$&</span>`),
+        	label: label.replace(reg, `<span class="fg-attention">$&</span>`),
 		})
     return prev;
 	}, [])
