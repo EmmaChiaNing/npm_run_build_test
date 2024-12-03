@@ -11,6 +11,7 @@
 			@change-bank-field-value="changeBankFieldValue"
 		/>
 		<button @click="onSubmit">Submit</button>
+		<p v-if="selectBank">select bank： {{ selectBank }}</p>
 	</div>
 </template>
   
@@ -22,6 +23,7 @@ import SearchBox from "@/components/financialInstitution/SearchBox.vue";
 const bankFieldValue = ref("請選擇匯款銀行代碼");
 const isSearchBoxVisible = ref(false);
 const isError = ref(false);
+const selectBank = ref(null)
 
 const handlerSearchBoxVisible = () => {
 	isSearchBoxVisible.value = !isSearchBoxVisible.value
@@ -33,11 +35,11 @@ const changeBankFieldValue = (val) => {
 }
 
 const onSubmit = () => {
-	console.log("🚀 ~ onSubmit ~ bankFieldValue.value:", bankFieldValue.value)
 	if (!bankFieldValue.value || bankFieldValue.value === "請選擇匯款銀行代碼") {
 		isError.value = true;
 	} else {
 		isError.value = false;
 	}
+	selectBank.value = bankFieldValue.value
 }
 </script>
